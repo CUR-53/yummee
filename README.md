@@ -1,2 +1,2 @@
 # recipe_website
- A website where you can find and make recipe's 
+ A side where you can find and save your recipe's 
