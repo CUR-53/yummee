@@ -1,0 +1,178 @@
+/* ===== BASE SITE CSS START ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --white-: #fff;
+  --darkBlue-: #003049;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* 0.625rem = 10px */
+html {
+  font-family: 'poppins', sans-serif;
+  font-size: 0.625rem;
+}
+
+/* 1.6rem = 16px */
+body {
+  background-color: var(--white);
+
+  font-size: 1.6rem;
+}
+/* ===== BASE SITE CSS END ===== */
+
+/* Header */
+header {
+  height: 45vh;
+  background: var(--darkBlue-);
+}
+
+/* Navigations menu */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  padding: 30px 30px;
+  background-color: var(--darkBlue-);
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* burgermenu */
+.burgermenu_container {
+  display: none;
+
+  width: 100%;
+}
+
+.burgermenu_container.active {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 101vh;
+  padding: 100px 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.burgermenu_container a {
+  text-decoration: none;
+  color: white;
+
+  list-style: none;
+}
+
+.burgermenu_container li {
+  width: 100vw;
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+/* Burgermenu icon */
+.burgermenu_icon {
+  display: block;
+
+  z-index: 200;
+
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 8px;
+  background-color: var(--white-);
+
+  transition: all 0.3s ease-in-out;
+
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.burgermenu_icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burgermenu_icon.active .bar:nth-child(1) {
+  background-color: #fff;
+
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burgermenu_icon.active .bar:nth-child(3) {
+  background-color: #fff;
+
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hero section */
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 850px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero_container h1 {
+  color: var(--white-);
+  letter-spacing: 1px;
+  font-family: 'poppins' sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: 3vh;
+  z-index: 1;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 10vh;
+  z-index: 1;
+  width: 100%;
+}
+
+input[type='search'] {
+  width: 100%;
+  height: 50px;
+  margin: 0 30px;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  font-family: 'poppins' sans-serif;
+
+  letter-spacing: 0.5px;
+}
