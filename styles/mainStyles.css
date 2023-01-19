@@ -273,12 +273,12 @@ input::placeholder {
     grid-template: 70px / 1fr 2fr 2fr 2fr 2fr;
   }
 
-  .filter_btns > div:nth-child(1) {
+  .filter_btns > a:nth-child(1) {
     grid-column: span 1;
   }
 }
 
-.filter_btns > div {
+.filter_btns > a {
   display: grid;
   place-content: center;
 
@@ -287,24 +287,30 @@ input::placeholder {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--white-);
+  text-decoration: none;
 }
 
 .span_2 {
   grid-column: span 2;
 }
 
-.filter_btns > div:nth-child(1) {
+.filter_btns > a:nth-child(1) {
   background-color: var(--darkBlue-);
 }
-.filter_btns > div:nth-child(2) {
+.filter_btns > a:nth-child(2) {
   background-color: var(--green-);
 }
-.filter_btns > div:nth-child(3) {
+.filter_btns > a:nth-child(3) {
   background-color: var(--orange-);
 }
-.filter_btns > div:nth-child(4) {
+.filter_btns > a:nth-child(4) {
   background-color: var(--red-);
 }
-.filter_btns > div:nth-child(5) {
+.filter_btns > a:nth-child(5) {
   background-color: var(--lightBlue);
+}
+
+.filter_btns a {
+  width: 1fr;
+  height: 1fr;
 }
