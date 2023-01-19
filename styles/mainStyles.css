@@ -207,8 +207,7 @@ input[type='search'] {
 
   font-family: 'poppins' sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 input:active {
@@ -221,7 +220,7 @@ input::placeholder {
   font-weight: 600;
   color: var(--lightGrey-);
 
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .search_icon {
@@ -240,6 +239,7 @@ input::placeholder {
 
   position: relative;
   top: 40px;
+
   max-width: 1366px;
   height: 35vh;
   margin: 0px auto;
@@ -258,16 +258,18 @@ input::placeholder {
 
 .filter_btns > a {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
 
   border-radius: 8px;
 
   font-size: clamp(1.3rem, 2vw, 1.5rem);
   font-weight: 600;
-  color: var(--white-);
   text-decoration: none;
+  color: var(--white-);
+
+  gap: 8px;
+  letter-spacing: 0.5px;
 }
 
 .filter_btns a img {
