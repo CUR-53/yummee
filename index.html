@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/mainStyles.css" />
+    <link rel="stylesheet" href="styles/mediaquerys.css" />
     <script src="scripts/javascript.js" defer></script>
     <title>The Recipe Website</title>
   </head>
@@ -40,7 +41,9 @@
       <section class="hero_container">
         <h1>The Recipe Website</h1>
         <form action="#">
-          <i class="search_icon"><img src="assets/search_icon.svg" alt="" /></i>
+          <i class="search_icon">
+            <img src="assets/search_icon.svg" alt="Søg ikon" />
+          </i>
           <input
             type="search"
             id="recipe_search"
@@ -53,11 +56,35 @@
     <!-- Filter section -->
     <section class="filter_container">
       <div class="filter_btns">
-        <a class="span_2" href="#">Alle</a>
-        <a href="#">Morgenmad</a>
-        <a href="#">Middagsmad</a>
-        <a href="#">Aftensmad</a>
-        <a href="#">Dessert</a>
+        <a class="grid_span_2" href="#">Alle</a>
+        <a href="#">
+          <img
+            class="filter_icon_width"
+            src="assets/green_icon.svg"
+            alt="Morgenmad ikon"
+          />Morgenmad</a
+        >
+        <a href="#">
+          <img
+            class="filter_icon_width_2"
+            src="assets/orange_icon.svg"
+            alt="Middagsmad ikon"
+          />Middagsmad</a
+        >
+        <a href="#">
+          <img
+            class="filter_icon_width"
+            src="assets/red_icon.svg"
+            alt="Aftensmad ikon"
+          />Aftensmad</a
+        >
+        <a href="#">
+          <img
+            class="filter_icon_width"
+            src="assets/lightBlue_icon.svg"
+            alt="Dessert ikon"
+          />Dessert</a
+        >
       </div>
     </section>
   </body>
