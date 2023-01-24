@@ -3,14 +3,14 @@
 
 :root {
   --white-: #fff;
-  
+
   --darkBlue-: #003049; /* Primary color */
   --green-: #009660; /* Primary color */
   --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
 
-  --lightGrey-: #989898; 
+  --lightGrey-: #989898;
 }
 
 * {
@@ -57,7 +57,7 @@ body {
 
 /* Header */
 header {
-  height: 50vh;
+  height: 60vh;
   background: var(--darkBlue-);
 }
 
@@ -197,13 +197,23 @@ nav {
 .hero_container h1 {
   z-index: 1;
 
-  margin-bottom: 3vh;
-
   font-family: 'poppins' sans-serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(4rem, 6vw, 6rem);
   color: var(--white-);
 
   letter-spacing: 1px;
+}
+
+.hero_container h2 {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  padding: 0px 50px;
+  color: var(--white-);
+  font-weight: 400;
+  letter-spacing: 1px;
+  /*  max-width: 80vw; */
 }
 
 /* Search bar */
