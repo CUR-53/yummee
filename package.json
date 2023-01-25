@@ -1,0 +1,24 @@
+{
+  "name": "recipe_website",
+  "version": "1.0.0",
+  "description": "A side where you can find and save your recipe's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CUR-53/recipe_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CUR-53/recipe_website/issues"
+  },
+  "homepage": "https://github.com/CUR-53/recipe_website#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1"
+  }
+}
