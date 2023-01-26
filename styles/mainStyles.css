@@ -60,7 +60,7 @@ body {
 }
 
 /* Header */
-header {
+.main_header {
   height: 60vh;
   background: var(--darkBlue-);
 }
