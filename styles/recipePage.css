@@ -7,13 +7,16 @@
 /* ===== BASE SITE CSS START ===== */
 :root {
   --white-: #fff;
-
+  --darkBlue-: #003049; /* Primary color */
   --darkBlue-: #003049; /* Primary color */
   --green-: #009660; /* Primary color */
+  --green-: #009660; /* Primary color */
+  --orange-: #e87b17; /* Primary color */
   --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
+  --red-: #c62f26; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
-
+  --lightBlue: #308f95; /* Primary color */
   --lightGrey-: #989898;
 }
 
@@ -31,9 +34,9 @@ html {
 
 /* 1.6rem = 16px */
 body {
-  font-family: 'poppins', sans-serif;
   background-color: var(--white);
 
+  font-family: 'poppins', sans-serif;
   font-size: 1.6rem;
 }
 /* ===== BASE SITE CSS END ===== */
@@ -59,29 +62,79 @@ body {
   background-color: var(--lightBlue);
 }
 
+/* Header */
 .recipe_header {
-  height: 9.7vh;
+  height: 92px;
 }
 
-.grid_info_container {
+/* Hero section */
+.grid_recipe_container {
   display: grid;
-  place-content: center;
   grid-template-columns: 1fr;
-  width: 100%;
+  grid-template-rows: 35vh repeat(3, 50vh);
+
+  place-content: center;
 }
 
-.grid_info_container > div {
+/* placeholder  */
+.recipe_mainText_box,
+.recipe_img_box,
+.recipe_ingredients_box,
+.recipe_howTo_box {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 50vh;
 }
 
-.grid_info_container > div:nth-child(1) {
+.recipe_mainText_box {
   order: 2;
-  background-color: green;
 }
-.grid_info_container > div:nth-child(2) {
+
+.recipe_mainText_box h1 {
+  max-width: 500px;
+
+  font-size: clamp(30px, 4vw, 45px);
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.mainText_info_boxes {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  gap: 40px;
+}
+
+.recipe_mainText_box span {
+  max-width: 427px;
+  margin-top: 20px;
+
+  font-size: 14px;
+}
+
+.recipe_img_box {
+  background-image: url(/assets/placeholder-img.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+
   order: 1;
-  background-color: orange;
+}
+
+.recipe_ingredients_box {
+  background-color: #003049;
+
+  order: 3;
+}
+
+.recipe_howTo_box {
+  background-color: #989898;
+
+  order: 4;
 }

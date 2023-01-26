@@ -18,18 +18,30 @@
   .filter_btns > a:nth-child(1) {
     grid-column: span 1;
   }
+}
 
+@media screen and (min-width: 1100px) {
   /*  recipePage.html */
-  .grid_info_container {
-    grid-template-columns: 1fr 1fr;
+  .grid_recipe_container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    width: 100%;
   }
 
-  .grid_info_container > div:nth-child(1) {
-    order: 0;
-    background-color: rgb(116, 171, 116);
+  .recipe_ingredients_box,
+  .recipe_howTo_box {
+    height: 50vh;
   }
-  .grid_info_container > div:nth-child(2) {
-    order: 0;
-    background-color: rgb(232, 180, 83);
+
+  .recipe_mainText_box {
+    height: fit-content;
+    padding: 90px 100px;
+    order: 1;
+  }
+
+  .recipe_img_box {
+    order: 2;
   }
 }
