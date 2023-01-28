@@ -1,3 +1,4 @@
+/*  index.html */
 @media screen and (max-width: 1417px) {
   /* Filter section */
   .filter_container {
@@ -5,12 +6,17 @@
   }
 }
 
+/*  index.html */
 @media screen and (min-width: 1100px) {
-  /*  index.html */
   /* Filter section */
-  header {
+  .main_header {
     height: 50vh;
   }
+
+  .hero_container {
+    padding-top: 60px;
+  }
+
   .filter_btns {
     grid-template: 70px / 1fr 2fr 2fr 2fr 2fr;
   }
@@ -20,8 +26,8 @@
   }
 }
 
+/*  recipePage.html */
 @media screen and (min-width: 1100px) {
-  /*  recipePage.html */
   .grid_recipe_container {
     display: grid;
     place-content: center;
