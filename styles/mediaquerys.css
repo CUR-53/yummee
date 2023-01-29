@@ -27,13 +27,12 @@
 }
 
 /*  recipePage.html */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1140px) {
   .grid_recipe_container {
     display: grid;
-    place-content: center;
     grid-template-columns: 45% 55%;
     grid-template-rows: auto;
-    width: 100%;
+    place-content: center;
   }
 
   .recipe_ingredients_box,
@@ -43,11 +42,16 @@
 
   .recipe_mainText_box {
     height: fit-content;
-    padding: 90px 100px;
     order: 1;
   }
 
   .recipe_img_box {
     order: 2;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .recipe_mainText_box {
+    padding: 100px 90px;
   }
 }

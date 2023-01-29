@@ -7,16 +7,13 @@
 /* ===== BASE SITE CSS START ===== */
 :root {
   --white-: #fff;
-  --darkBlue-: #003049; /* Primary color */
+
   --darkBlue-: #003049; /* Primary color */
   --green-: #009660; /* Primary color */
-  --green-: #009660; /* Primary color */
-  --orange-: #e87b17; /* Primary color */
   --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
-  --red-: #c62f26; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
-  --lightBlue: #308f95; /* Primary color */
+
   --lightGrey-: #989898;
 }
 
@@ -71,22 +68,19 @@ body {
 .grid_recipe_container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 35vh repeat(3, 50vh);
+  grid-template-rows: 35vh repeat(3, auto);
 
   place-content: center;
 }
 
-/* placeholder  */
-.recipe_mainText_box,
-.recipe_img_box,
-.recipe_ingredients_box,
-.recipe_howTo_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .recipe_mainText_box {
+  display: grid;
+  place-content: center;
+
+  position: relative;
+
+  padding: 50px 30px;
+
   order: 2;
 }
 
@@ -101,25 +95,40 @@ body {
 
 .mainText_info_boxes {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
 
   margin-top: 50px;
-
-  font-size: 15px;
-  font-weight: 600;
 
   gap: 40px;
 }
 
+.mainText_info_boxes p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  gap: 8px;
+}
+
+.mainText_info_boxes p img {
+  padding-bottom: 1px;
+}
+
 .recipe_mainText_box span {
-  max-width: 427px;
+  max-width: 500px;
   margin-top: 20px;
 
-  font-size: 14px;
+  font-size: clamp(14px, 2rem, 16px);
+  letter-spacing: 0.3px;
+  line-height: 25px;
 }
 
 .recipe_img_box {
-  background-image: url(/assets/placeholder-img.jpg);
+  background-image: url(/assets/tomatsuppe-med-peberfrugt-og-sprod-gremolata.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
