@@ -162,7 +162,7 @@ body {
 }
 
 .ingredients_list h2 {
-  margin: 30px 0 25px;
+  margin: 0px 0px 25px;
 
   font-size: 3rem;
   font-weight: 800;
@@ -215,12 +215,78 @@ body {
 
 /* How to container */
 .recipe_howTo_box {
-  display: grid;
-
   position: relative;
 
+  height: fit-content;
   padding: 50px 30px;
 
-  place-content: center;
-  order: 4;
+  order: 3;
+}
+
+.howTo_list {
+  max-width: 500px;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+/* How to liste */
+.howTo_list h2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+
+  letter-spacing: 1px;
+}
+
+.howTo_list h2 img {
+  padding-bottom: 8px;
+}
+
+.howTo_list ol h4 {
+  margin: 40px -18px 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+
+  letter-spacing: 0.5px;
+}
+
+.howTo_list p {
+  margin-left: -18px;
+}
+
+.howTo_list ol {
+  margin-left: 20px;
+  max-width: 700px;
+  position: relative;
+}
+
+.howTo_list ol::before {
+  content: '';
+  width: 0.5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 8%;
+  z-index: -1;
+}
+
+.howTo_list ol li {
+  padding: 0.5rem 1rem 1rem;
+}
+
+.howTo_list li + li {
+  margin-top: 1rem;
+}
+
+.howTo_list ol li::marker {
+  font-weight: 600;
+  color: var(--darkBlue-);
+  font-size: 1.8rem;
 }

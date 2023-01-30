@@ -39,11 +39,6 @@
     height: 100%;
   }
 
-  .recipe_ingredients_box,
-  .recipe_howTo_box {
-    height: max-content;
-  }
-
   .recipe_mainText_box {
     height: fit-content;
     order: 1;
@@ -56,7 +51,8 @@
 
 @media screen and (min-width: 550px) {
   .recipe_mainText_box,
-  .recipe_ingredients_box {
+  .recipe_ingredients_box,
+  .recipe_howTo_box {
     padding: 100px 90px;
   }
 
