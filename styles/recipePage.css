@@ -9,12 +9,22 @@
   --white-: #fff;
   --darkBlue-: #003049; /* Primary color */
   --darkBlue-: #003049; /* Primary color */
+  --darkBlue-: #003049; /* Primary color */
+  --darkBlue-: #003049; /* Primary color */
+  --green-: #009660; /* Primary color */
+  --green-: #009660; /* Primary color */
   --green-: #009660; /* Primary color */
   --green-: #009660; /* Primary color */
   --orange-: #e87b17; /* Primary color */
   --orange-: #e87b17; /* Primary color */
+  --orange-: #e87b17; /* Primary color */
+  --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
   --red-: #c62f26; /* Primary color */
+  --red-: #c62f26; /* Primary color */
+  --red-: #c62f26; /* Primary color */
+  --lightBlue: #308f95; /* Primary color */
+  --lightBlue: #308f95; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
   --lightGrey-: #989898;
@@ -81,6 +91,7 @@ body {
 
   position: relative;
 
+  margin-bottom: 30px;
   padding: 50px 30px;
 
   place-content: center;
@@ -224,7 +235,7 @@ body {
 }
 
 .howTo_list {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
 
   text-align: left;
@@ -234,12 +245,14 @@ body {
 .howTo_list h2 {
   display: flex;
   align-items: center;
-  gap: 15px;
+
   margin-top: 20px;
+
   font-size: 3rem;
   font-weight: 800;
   color: #000;
 
+  gap: 15px;
   letter-spacing: 1px;
 }
 
@@ -248,7 +261,7 @@ body {
 }
 
 .howTo_list ol h4 {
-  margin: 40px -18px 15px;
+  margin: 40px -18px 10px;
 
   font-size: 18px;
   font-weight: 700;
@@ -262,19 +275,22 @@ body {
 }
 
 .howTo_list ol {
-  margin-left: 20px;
-  max-width: 700px;
   position: relative;
+
+  max-width: 700px;
+  margin-left: 20px;
 }
 
 .howTo_list ol::before {
   content: '';
+
+  position: absolute;
+  left: 8%;
+  top: 0;
+  z-index: -1;
+
   width: 0.5rem;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 8%;
-  z-index: -1;
 }
 
 .howTo_list ol li {
@@ -286,7 +302,7 @@ body {
 }
 
 .howTo_list ol li::marker {
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--darkBlue-);
-  font-size: 1.8rem;
 }

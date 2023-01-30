@@ -40,6 +40,7 @@
   }
 
   .recipe_mainText_box {
+    margin-bottom: 0px;
     height: fit-content;
     order: 1;
   }
