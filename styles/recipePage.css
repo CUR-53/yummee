@@ -8,15 +8,15 @@
 :root {
   --white-: #fff;
   --darkBlue-: #003049; /* Primary color */
-
+  --darkBlue-: #003049; /* Primary color */
   --green-: #009660; /* Primary color */
-
+  --green-: #009660; /* Primary color */
   --orange-: #e87b17; /* Primary color */
-
+  --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
-
+  --red-: #c62f26; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
-
+  --lightBlue: #308f95; /* Primary color */
   --lightGrey-: #989898;
 }
 
@@ -134,17 +134,19 @@ body {
 
 /* Big img container */
 .recipe_img_box {
+  height: 35vh;
   background-image: url(/assets/tomatsuppe-med-peberfrugt-og-sprod-gremolata.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 35vh;
+
   order: 1;
 }
 
 /* ingredients container */
 .recipe_ingredients_box {
   position: relative;
+
   height: fit-content;
   padding: 50px 30px;
   background-color: #003049;
@@ -153,44 +155,62 @@ body {
 }
 
 .ingredients_list {
-  text-align: left;
   max-width: 500px;
   margin: 0 auto;
+
+  text-align: left;
 }
 
 .ingredients_list h2 {
-  margin: 30px 0;
-  color: #fff;
-  font-weight: 800;
+  margin: 30px 0 25px;
+
   font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+
   letter-spacing: 1px;
 }
 
 .ingredients_list h3 {
+  display: flex;
+
+  font-size: 15px;
+  font-weight: 600;
   color: #fff;
+
+  letter-spacing: 0.5px;
+  gap: 10px;
 }
 
 /* ingredients container list  */
 .ingredients_list ul {
-  list-style: none;
   max-width: 500px;
   margin: 0 auto;
+
+  list-style: none;
 }
 
 .ingredients_list ul li {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+
+  margin-bottom: 15px;
   padding-bottom: 5px;
-  gap: 100px;
+  border-bottom: 1px solid #fff;
 
   color: #fff;
-  border-bottom: 1px solid #fff;
+
+  gap: 50px;
 }
 
 .ingredients_list ul h4 {
+  margin: 45px 0px 15px;
+
+  font-size: 18px;
+  font-weight: 700;
   color: #fff;
-  margin: 50px 0px 10px;
+
+  letter-spacing: 0.5px;
 }
 
 /* How to container */
