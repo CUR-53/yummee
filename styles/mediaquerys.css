@@ -35,9 +35,13 @@
     place-content: center;
   }
 
+  .recipe_img_box {
+    height: 100%;
+  }
+
   .recipe_ingredients_box,
   .recipe_howTo_box {
-    height: 50vh;
+    height: max-content;
   }
 
   .recipe_mainText_box {
@@ -55,7 +59,7 @@
   .recipe_ingredients_box {
     padding: 100px 90px;
   }
- 
+
   /* Navigations menu */
   nav {
     padding: 30px 40px;
