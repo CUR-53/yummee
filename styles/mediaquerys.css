@@ -45,6 +45,10 @@
     order: 1;
   }
 
+  .howTo_list h2 {
+    margin-top: 0;
+  }
+
   .recipe_img_box {
     order: 2;
   }
