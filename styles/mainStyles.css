@@ -278,12 +278,9 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 
-  position: relative;
-  top: 40px;
-
   max-width: 1366px;
-  height: 35vh;
-  margin: 0px auto;
+  height: 100%;
+  margin: 50px auto;
 }
 
 /* Filter btns */
@@ -335,4 +332,45 @@ input::placeholder {
 
 .grid_span_2 {
   grid-column: span 2;
+}
+
+/* recipe section grid */
+
+.recipe_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+.all {
+  background-color: var(--darkBlue-);
+  border-radius: 8px;
+}
+
+.recipe_img img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+}
+
+.category_name {
+  color: #fff;
+}
+
+.recipe_content > h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.recipe_content > p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.recipe_content i {
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: normal;
 }
