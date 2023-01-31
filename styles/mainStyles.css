@@ -8,9 +8,14 @@
 :root {
   --white-: #fff;
   --darkBlue-: #003049; /* Primary color */
+  --darkBlue-: #003049; /* Primary color */
+  --green-: #009660; /* Primary color */
   --green-: #009660; /* Primary color */
   --orange-: #e87b17; /* Primary color */
+  --orange-: #e87b17; /* Primary color */
   --red-: #c62f26; /* Primary color */
+  --red-: #c62f26; /* Primary color */
+  --lightBlue: #308f95; /* Primary color */
   --lightBlue: #308f95; /* Primary color */
   --lightGrey-: #989898;
 }
@@ -339,38 +344,87 @@ input::placeholder {
 .recipe_box {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+
   width: 100%;
-  padding: 0px 30px;
   margin: 0 auto;
+  padding: 0px 30px;
+
+  gap: 30px;
 }
 
 .all {
-  background-color: var(--darkBlue-);
   border-radius: 8px;
+  background-color: var(--darkBlue-);
 }
 
-.recipe_img img {
-  border-radius: 8px 8px 0px 0px;
+.recipe_img {
+  position: relative;
+}
+
+.recipe_img > img {
   width: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 
-.category_name {
+.category_breakfast,
+.category_lunch,
+.category_dinner,
+.category_dessert {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 9px 12px 2px 12px;
+  border-radius: 8px;
+
   color: #fff;
+}
+
+.category_breakfast {
+  background-color: var(--green-);
+}
+
+.category_lunch {
+  background-color: var(--orange-);
+}
+
+.category_dinner {
+  background-color: var(--red-);
+}
+
+.category_dessert {
+  background-color: var(--lightBlue);
 }
 
 .recipe_content > h2 {
-  color: #fff;
   font-size: 2rem;
+  padding: 0px 0px 20px 15px;
+  color: #fff;
 }
 
 .recipe_content > p {
-  color: #fff;
   font-size: 1.3rem;
+  padding: 5px 15px 15px 15px;
+  color: #fff;
 }
 
 .recipe_content i {
-  color: #fff;
   font-size: 1.3rem;
   font-style: normal;
+  color: #fff;
+}
+
+.recipe_content_top {
+  display: flex;
+  flex-direction: row;
+  padding: 13px;
+  gap: 25px;
+}
+
+.recipe_content_top > span i {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  align-items: center;
 }

@@ -21,6 +21,7 @@
   /* recipe section grid */
   .recipe_box {
     display: grid;
+    padding: 0px 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -47,7 +48,7 @@
   .recipe_box {
     display: grid;
     max-width: 1366px;
-    padding: 0;
+
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -78,4 +79,5 @@
   .recipe_img_box {
     order: 2;
   }
+
 }
