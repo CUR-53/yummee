@@ -400,7 +400,7 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   padding: 15px 15px;
-  gap: 25px;
+  gap: 20px;
 }
 
 .recipe_content_top > span i {
