@@ -4,6 +4,10 @@
   .filter_container {
     padding: 0px 30px;
   }
+
+  .recipe_box {
+    padding: 0px 30px;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -17,11 +21,13 @@
   nav {
     padding: 30px 40px;
   }
+}
 
+@media screen and (min-width: 750px) {
   /* recipe section grid */
   .recipe_box {
     display: grid;
-    padding: 0px 30px;
+
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -44,7 +50,9 @@
   .filter_btns > a:nth-child(1) {
     grid-column: span 1;
   }
+}
 
+@media screen and (min-width: 1150px) {
   .recipe_box {
     display: grid;
     max-width: 1366px;
@@ -79,5 +87,4 @@
   .recipe_img_box {
     order: 2;
   }
-
 }

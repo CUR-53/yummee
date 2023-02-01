@@ -341,13 +341,16 @@ input::placeholder {
 
 /* recipe section grid */
 
+.recipe_grid_container {
+  margin-bottom: 80px;
+}
+
 .recipe_box {
   display: grid;
   grid-template-columns: 1fr;
 
   width: 100%;
   margin: 0 auto;
-  padding: 0px 30px;
 
   gap: 30px;
 }
@@ -373,37 +376,17 @@ input::placeholder {
   position: absolute;
   left: 20px;
   top: 20px;
-  padding: 9px 12px 2px 12px;
-  border-radius: 8px;
-
-  color: #fff;
-}
-
-.category_breakfast {
-  background-color: var(--green-);
-}
-
-.category_lunch {
-  background-color: var(--orange-);
-}
-
-.category_dinner {
-  background-color: var(--red-);
-}
-
-.category_dessert {
-  background-color: var(--lightBlue);
 }
 
 .recipe_content > h2 {
   font-size: 2rem;
-  padding: 0px 0px 20px 15px;
+  padding: 0px 0px 5px 15px;
   color: #fff;
 }
 
 .recipe_content > p {
   font-size: 1.3rem;
-  padding: 5px 15px 15px 15px;
+  padding: 5px 15px 20px 15px;
   color: #fff;
 }
 
@@ -416,7 +399,7 @@ input::placeholder {
 .recipe_content_top {
   display: flex;
   flex-direction: row;
-  padding: 13px;
+  padding: 15px 15px;
   gap: 25px;
 }
 
