@@ -13,7 +13,7 @@ function filterPosts(item) {
   changeActivePosition(item);
   for (let i = 0; i < allCategoryPosts.length; i++) {
     if (allCategoryPosts[i].classList.contains(item.attributes.id.value)) {
-      allCategoryPosts[i].style.display = 'block';
+      allCategoryPosts[i].style.display = 'flex';
     } else {
       allCategoryPosts[i].style.display = 'none';
     }
