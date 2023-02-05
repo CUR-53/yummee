@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/mainStyles.css" />
     <link rel="stylesheet" href="styles/mediaquerys.css" />
+    <script src="scripts/suggestions.js" defer></script>
     <script src="scripts/recipes.js" defer></script>
     <script src="scripts/javascript.js" defer></script>
     <title>Yummee</title>
@@ -45,16 +46,18 @@
       <section class="hero_container">
         <h1>Yummee</h1>
         <h2>Din Go-To Destination For Opskrifter Og Madinspiration</h2>
-        <form action="#">
+        <form class="search_input">
           <i class="search_icon">
             <img src="assets/search_icon.svg" alt="Søg ikon" />
           </i>
           <input
-            type="search"
-            id="recipe_search"
+            type="text"
             name="recipe_search"
             placeholder="Find din næste opskrift"
           />
+          <div class="autocom_box">
+            <!-- javascript suggestions -->
+          </div>
         </form>
       </section>
     </header>

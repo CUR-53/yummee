@@ -60,9 +60,9 @@ let recipeData = [
     image: '/assets/creme-brulee.jpg',
     imageAltText: 'creme brulee',
 
-    title: 'Creme brulé',
+    title: 'Creme brulee',
     description:
-      'Creme brulé er en af de klassiske franske desserter, der består af fløde, vanilje, æggeblommer og sukker afsluttet med et tyndt låg af sprødt brændt sukker.',
+      'Creme brulee er en af de klassiske franske desserter, der består af fløde, vanilje, æggeblommer og sukker afsluttet med et tyndt låg af sprødt brændt sukker.',
 
     time: '25',
     person: '4',
