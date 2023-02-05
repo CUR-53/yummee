@@ -14,6 +14,8 @@ let recipeData = [
     time: '30',
     person: '4',
     language: 'Amerikansk',
+
+    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
   },
 
   {
@@ -49,7 +51,8 @@ let recipeData = [
     person: '4',
     language: 'Spansk',
 
-    onClick: 'onclick="location.href=\'recipes/recipe_template.html\';"',
+    onClick:
+      'onclick="location.href=\'recipes/Tomatsuppe_med_sprød_gremolata.html\';"',
   },
 
   {

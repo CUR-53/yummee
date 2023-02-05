@@ -131,7 +131,6 @@ body {
 /* Big img container */
 .recipe_img_box {
   height: 35vh;
-  background-image: url(/assets/tomatsuppe-med-peberfrugt-og-sprod-gremolata.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
