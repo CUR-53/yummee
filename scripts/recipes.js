@@ -107,7 +107,7 @@ let recipeData = [
       'Cheesesticks eller mozzarella sticks er fastfood eller street food, når det er rigtig fedt eller fedtet... Her bliver mozarella sticks serveret i en ny udgave med mere smag.',
 
     time: '30',
-    person: '3',
+    person: '4',
     language: 'Fransk',
 
     page: 'opskrifter/mozzarella-sticks.html',
