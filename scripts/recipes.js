@@ -15,7 +15,7 @@ let recipeData = [
     person: '4',
     language: 'Amerikansk',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/Amerikanske_pandekager.html',
   },
 
   {
@@ -34,7 +34,7 @@ let recipeData = [
     person: '4',
     language: 'Mexicansk',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/Quesadilla_i_lag.html',
   },
 
   {
@@ -43,7 +43,7 @@ let recipeData = [
     categoryAltText: 'dinner ikon',
 
     image: '/assets/tomatsuppe-med-peberfrugt-og-sprod-gremolata.jpg',
-    imageAltText: 'tomatsuppe med peberfrugt og sprod gremolata',
+    imageAltText: 'tomatsuppe med peberfrugt og sprød gremolata',
 
     title: 'Tomatsuppe med sprød gremolata',
     description:
@@ -53,8 +53,7 @@ let recipeData = [
     person: '4',
     language: 'Spansk',
 
-    onClick:
-      'onclick="location.href=\'recipes/Tomatsuppe_med_sprød_gremolata.html\';"',
+    page: 'recipes/Tomatsuppe_med_sprød_gremolata.html',
   },
 
   {
@@ -73,7 +72,7 @@ let recipeData = [
     person: '4',
     language: 'Fransk',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/creme_brulee.html',
   },
 
   {
@@ -92,8 +91,7 @@ let recipeData = [
     person: '4',
     language: 'Japansk',
 
-    onClick:
-      'onclick="location.href=\'recipes/Tomatsuppe_med_sprød_gremolata.html\';"',
+    page: 'recipes/Wok_med_kylling_nudler_og_grøntsager.html',
   },
 
   {
@@ -112,7 +110,7 @@ let recipeData = [
     person: '3',
     language: 'Fransk',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/Mozzarella_sticks.html',
   },
 
   {
@@ -131,7 +129,7 @@ let recipeData = [
     person: '3',
     language: 'Belgiske',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/Belgiske_vafler.html',
   },
 
   {
@@ -150,7 +148,7 @@ let recipeData = [
     person: '3',
     language: 'Amerikansk',
 
-    onClick: 'onclick="location.href=\'recipes/Amerikanske_pandekager.html\';"',
+    page: 'recipes/Muffins_med_chokoladestykker.html',
   },
 
   {
@@ -169,8 +167,7 @@ let recipeData = [
     person: '4',
     language: 'Italiensk ',
 
-    onClick:
-      'onclick="location.href=\'recipes/Tomatsuppe_med_sprød_gremolata.html\';"',
+    page: 'recipes/Spaghetti_Carbonara.html',
   },
 ];
 
@@ -180,7 +177,7 @@ const renderRecipe = (data) => {
 
   data.forEach((accord) => {
     recipes.innerHTML += `
-    <div class="all ${accord.type}" ${accord.onClick}>
+    <div class="all ${accord.type}" onclick="location.href=\'${accord.page}\';"'>
     <div class="recipe_img">
             <img src="${accord.image}" alt="${accord.imageAltText}" />
             <span class="category_name"

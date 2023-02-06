@@ -1,9 +1,9 @@
 let suggestions = [
   'Amerikanske pandekager',
   'Quesadilla i lag',
-  'Tomatsuppe med sprød gremolata',
+  'Tomatsuppe med peberfrugt og sprød gremolata',
   'Creme brulee',
-  'Wok med kylling, nudler og grøntsager',
+  'Wok med kylling nudler og grøntsager',
   'Mozzarella sticks',
   'Belgiske vafler',
   'Muffins med chokoladestykker',
