@@ -1,13 +1,13 @@
 let suggestions = [
-  'Amerikanske pandekager',
-  'Quesadilla i lag',
-  'Tomatsuppe med peberfrugt og sprød gremolata',
-  'Creme brulee',
-  'Wok med kylling nudler og grøntsager',
-  'Mozzarella sticks',
-  'Belgiske vafler',
-  'Muffins med chokoladestykker',
-  'Spaghetti Carbonara',
+  'amerikanske pandekager',
+  'quesadilla i lag',
+  'tomatsuppe med peberfrugt og sprød gremolata',
+  'creme brulee',
+  'wok med kylling nudler og grøntsager',
+  'mozzarella sticks',
+  'belgiske vafler',
+  'muffins med chokoladestykker',
+  'spaghetti carbonara',
 ];
 
 const searchWrapper = document.querySelector('.search_input');
@@ -23,7 +23,7 @@ inputBox.onkeyup = (e) => {
   let emptyArray = [];
   if (userData) {
     icon.onclick = () => {
-      webLink = `recipes/${encodeURIComponent(selectData)}.html`;
+      webLink = `opskrifter/${encodeURIComponent(selectData)}.html`;
       linkTag.setAttribute('href', webLink);
       linkTag.click();
     };
@@ -33,9 +33,9 @@ inputBox.onkeyup = (e) => {
     });
     emptyArray = emptyArray.map((data) => {
       // passing return data inside li tag
-      return (data = `<li onclick="location.href='recipes/${data.replace(
+      return (data = `<li onclick="location.href='opskrifter/${data.replace(
         / /g,
-        '_'
+        '-'
       )}.html';">${data}</li>`);
     });
     searchWrapper.classList.add('active'); //show autocomplete box

@@ -15,7 +15,7 @@ let recipeData = [
     person: '4',
     language: 'Amerikansk',
 
-    page: 'recipes/Amerikanske_pandekager.html',
+    page: 'opskrifter/amerikanske-pandekager.html',
   },
 
   {
@@ -23,7 +23,7 @@ let recipeData = [
     category: '/assets/lunch_icon.svg',
     categoryAltText: 'lunch ikon',
 
-    image: '/assets/Quesadillas-i-lag.jpeg',
+    image: '/assets/quesadillas-i-lag.jpg',
     imageAltText: 'Quesadilla i lag',
 
     title: 'Quesadillas i lag',
@@ -34,7 +34,7 @@ let recipeData = [
     person: '4',
     language: 'Mexicansk',
 
-    page: 'recipes/Quesadilla_i_lag.html',
+    page: 'opskrifter/quesadilla-i-lag.html',
   },
 
   {
@@ -53,7 +53,7 @@ let recipeData = [
     person: '4',
     language: 'Spansk',
 
-    page: 'recipes/Tomatsuppe_med_sprød_gremolata.html',
+    page: 'opskrifter/tomatsuppe-med-sprød-gremolata.html',
   },
 
   {
@@ -72,7 +72,7 @@ let recipeData = [
     person: '4',
     language: 'Fransk',
 
-    page: 'recipes/creme_brulee.html',
+    page: 'opskrifter/creme-brulee.html',
   },
 
   {
@@ -91,7 +91,7 @@ let recipeData = [
     person: '4',
     language: 'Japansk',
 
-    page: 'recipes/Wok_med_kylling_nudler_og_grøntsager.html',
+    page: 'opskrifter/wok-med-kylling-nudler-og-grøntsager.html',
   },
 
   {
@@ -110,7 +110,7 @@ let recipeData = [
     person: '3',
     language: 'Fransk',
 
-    page: 'recipes/Mozzarella_sticks.html',
+    page: 'opskrifter/mozzarella-sticks.html',
   },
 
   {
@@ -129,7 +129,7 @@ let recipeData = [
     person: '3',
     language: 'Belgiske',
 
-    page: 'recipes/Belgiske_vafler.html',
+    page: 'opskrifter/belgiske-vafler.html',
   },
 
   {
@@ -145,10 +145,10 @@ let recipeData = [
       'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
 
     time: '45',
-    person: '3',
+    person: '4',
     language: 'Amerikansk',
 
-    page: 'recipes/Muffins_med_chokoladestykker.html',
+    page: 'opskrifter/muffins-med-chokoladestykker.html',
   },
 
   {
@@ -167,7 +167,7 @@ let recipeData = [
     person: '4',
     language: 'Italiensk ',
 
-    page: 'recipes/Spaghetti_Carbonara.html',
+    page: 'opskrifter/spaghetti-carbonara.html',
   },
 ];
 

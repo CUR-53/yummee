@@ -331,9 +331,12 @@ input::placeholder {
   list-style: none;
   cursor: default;
 }
-
 .search_input.active .autocom_box li {
   display: block;
+}
+
+.autocom_box li::first-letter {
+  text-transform: capitalize;
 }
 
 .search_input li:hover {

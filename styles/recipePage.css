@@ -147,7 +147,7 @@ body {
 .recipe_ingredients_box {
   position: relative;
 
-  height: fit-content;
+  height: 100%;
   padding: 50px 30px;
   background-color: #003049;
 

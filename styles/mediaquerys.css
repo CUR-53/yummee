@@ -101,7 +101,7 @@
 
   .recipe_mainText_box {
     margin-bottom: 0px;
-    height: fit-content;
+    min-height: 50vh;
     order: 1;
   }
 
