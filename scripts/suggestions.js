@@ -3,6 +3,11 @@ let suggestions = [
   'Quesadilla i lag',
   'Tomatsuppe med sprød gremolata',
   'Creme brulee',
+  'Wok med kylling, nudler og grøntsager',
+  'Mozzarella sticks',
+  'Belgiske vafler',
+  'Muffins med chokoladestykker',
+  'Spaghetti Carbonara',
 ];
 
 const searchWrapper = document.querySelector('.search_input');

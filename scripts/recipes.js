@@ -163,7 +163,7 @@ let recipeData = [
 
     title: 'Spaghetti Carbonara',
     description:
-      'Spaghetti Carbonara - næsten som at sidde på en italiensk restaurant. Vi foreslår en tomatsalat til Spaghetti Cabonara.',
+      'Spaghetti Carbonara - næsten som at sidde på en italiensk restaurant. Vi foreslår en tomatsalat til Spaghetti Cabonara. Det ville de nok ikke gøre i Italien, de ville spise salaten bagefter.',
 
     time: '45',
     person: '4',
