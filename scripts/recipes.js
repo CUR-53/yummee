@@ -1,5 +1,7 @@
-let recipeData = [
+export let recipeData = [
   {
+    id: 0,
+
     type: 'breakfast',
     category: '/assets/breakfast_icon.svg',
     categoryAltText: 'breakfast ikon',
@@ -19,6 +21,8 @@ let recipeData = [
   },
 
   {
+    id: 1,
+
     type: 'lunch',
     category: '/assets/lunch_icon.svg',
     categoryAltText: 'lunch ikon',
@@ -38,6 +42,8 @@ let recipeData = [
   },
 
   {
+    id: 2,
+
     type: 'dinner',
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
@@ -57,6 +63,8 @@ let recipeData = [
   },
 
   {
+    id: 3,
+
     type: 'dessert',
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
@@ -76,6 +84,8 @@ let recipeData = [
   },
 
   {
+    id: 4,
+
     type: 'dinner',
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
@@ -95,6 +105,8 @@ let recipeData = [
   },
 
   {
+    id: 5,
+
     type: 'lunch',
     category: '/assets/lunch_icon.svg',
     categoryAltText: 'lunch ikon',
@@ -114,6 +126,8 @@ let recipeData = [
   },
 
   {
+    id: 6,
+
     type: 'breakfast',
     category: '/assets/breakfast_icon.svg',
     categoryAltText: 'breakfast ikon',
@@ -133,6 +147,8 @@ let recipeData = [
   },
 
   {
+    id: 7,
+
     type: 'dessert',
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
@@ -152,6 +168,8 @@ let recipeData = [
   },
 
   {
+    id: 8,
+
     type: 'dinner',
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
@@ -170,55 +188,3 @@ let recipeData = [
     page: 'opskrifter/spaghetti-carbonara.html',
   },
 ];
-
-const renderRecipe = (data) => {
-  let recipes = document.querySelector('.recipe_box');
-  recipes.innerHTML = '';
-
-  data.forEach((accord) => {
-    recipes.innerHTML += `
-    <div class="all ${accord.type}" onclick="location.href=\'${accord.page}\';"'>
-    <div class="recipe_img">
-            <img src="${accord.image}" alt="${accord.imageAltText}" />
-            <span class="category_name"
-              ><img src="${accord.category}" alt="${accord.categoryAltText}"
-            /></span>
-          </div>
-
-          <div class="recipe_content">
-            <div class="recipe_content_top">
-              <span
-                ><i
-                  ><img
-                    src="/assets/clock_icon_white.svg"
-                    alt="tid ikon"
-                  />${accord.time}min</i
-                ></span
-              ><span>
-                <i
-                  ><img
-                    src="/assets/per_icon_white.svg"
-                    alt="pr. person ikon"
-                  />${accord.person} per.</i
-                ></span
-              >
-              <span
-                ><i
-                  ><img
-                    src="/assets/tool_icon_white.svg"
-                    alt="køkken"
-                  />${accord.language}</i
-                ></span
-              >
-            </div>
-            <h2>${accord.title}</h2>
-            <p>
-              ${accord.description}
-            </p>
-          </div>
-        </div>
-        </div>`;
-  });
-};
-
-renderRecipe(recipeData);
