@@ -66,7 +66,7 @@ if (pageProduct) {
   let search = location.search;
   let productID = new URLSearchParams(search).get('id');
 
-  const productContainer = document.querySelector('.product-container');
+  const productContainer = document.querySelector('.recipe_details');
   const foundProduct = products.find((product) => product.id == productID);
 
   productContainer.innerHTML = productDetailTmpl(foundProduct);

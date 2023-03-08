@@ -1,3 +1,11 @@
+/* Suggestions js import */
+import suggestions from './suggestions.js';
+suggestions;
+
+/* RecipeTmpl js import */
+/* import recipeTmpl from './recipeTmpl.js';
+recipeTmpl; */
+
 /* filter function */
 const categoryTitle = document.querySelectorAll('.category-title');
 const allCategoryPosts = document.querySelectorAll('.all');

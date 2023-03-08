@@ -66,3 +66,5 @@ function showSuggestions(list) {
   }
   suggBox.innerHTML = listData;
 }
+
+export default suggestions;
