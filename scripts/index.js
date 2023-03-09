@@ -3,8 +3,8 @@ import suggestions from './suggestions.js';
 suggestions;
 
 /* RecipeTmpl js import */
-import renderRecipe from './recipeTmpl.js';
-renderRecipe;
+/* import renderRecipe from './recipeTmpl.js';
+renderRecipe; */
 
 /* filter function */
 const categoryTitle = document.querySelectorAll('.category-title');
