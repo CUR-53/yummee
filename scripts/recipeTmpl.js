@@ -73,3 +73,5 @@ if (pageProduct) {
 
   console.log('foundProduct', foundProduct);
 }
+
+export default {renderRecipe}
