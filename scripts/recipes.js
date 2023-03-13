@@ -1,4 +1,4 @@
-export let recipeData = [
+const recipeData = [
   {
     id: 0,
 
@@ -10,12 +10,46 @@ export let recipeData = [
     imageAltText: 'Amerikanske pandekager',
 
     title: 'Amerikanske pandekager',
-    description:
+    shortDescription:
       'Amerikanske pandekager passer perfekt til både brunch og dessert. Bag de små, tykke amerikanske pandekager i en almindelig pande eller i en blinispande og servér med blåbær.',
+    description:
+      'Amerikanske pandekager passer perfekt til både brunch og dessert. Bag de små, tykke amerikanske pandekager i en almindelig pande eller i en blinispande og servér med blåbær, ahornsirup og smør. Det er både nemt og dejligt at hygge sig med at lave amerikanske pandekager. Og det går rigtig hurtigt med at få de amerikanske pandekager spist!',
 
     time: '30',
     person: '4',
     language: 'Amerikansk',
+
+    ingredients: [
+      {
+        list: [
+          { name: 'Hvedemel', amount: '300', type: 'g' },
+          { name: 'Mælk', amount: '3', type: 'dl' },
+          { name: 'Skyr eller græsk yoghurt', amount: '2', type: 'dl' },
+          { name: 'Æg', amount: '2', type: 'stk' },
+          { name: 'Sukker', amount: '2', type: 'spsk' },
+          { name: 'Groft salt', amount: '¼', type: 'tsk' },
+          { name: 'Bagepulver', amount: '1½', type: 'tsk' },
+          { name: 'Smør - smeltet', amount: '50', type: 'g' },
+        ],
+      },
+      {
+        listTwo: [
+          { name: 'Ahornsirup', amount: '1', type: 'dl' },
+          { name: 'Blåbær', amount: '100', type: 'g' },
+          { name: 'Smør', amount: '50', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      { howTo: 'Pisk mel og mælk sammen med en håndmixer.' },
+      { howTo: 'Tilsæt kvark og pisk æg og resten af ingredienserne i.' },
+      {
+        howTo:
+          'Fordel 4 portioner dej a ca. ½ dl på panden. Bag pandekagerne ca. 2 min. på hver side. ',
+      },
+      { howTo: 'Server pandekagerne med ahornsirup, blåbær og smør.' },
+    ],
 
     page: 'opskrifter/amerikanske-pandekager.html',
   },
@@ -31,12 +65,46 @@ export let recipeData = [
     imageAltText: 'Quesadilla i lag',
 
     title: 'Quesadillas i lag',
-    description:
+    shortDescription:
       'Quesadilla i lag er en herlig mexicansk streetfood inspiret ret, som vi ser oftere og oftere her i Danmark. Quesadilla består af totillas, der lægges sammen og gratineres med ost.',
+    description:
+      'Amerikanske pandekager passer perfekt til både brunch og dessert. Bag de små, tykke amerikanske pandekager i en almindelig pande eller i en blinispande og servér med blåbær, ahornsirup og smør. Det er både nemt og dejligt at hygge sig med at lave amerikanske pandekager. Og det går rigtig hurtigt med at få de amerikanske pandekager spist!',
 
-    time: '45',
+    time: '30',
     person: '4',
-    language: 'Mexicansk',
+    language: 'Amerikansk',
+
+    ingredients: [
+      {
+        list: [
+          { name: 'Hvedemel', amount: '300', type: 'g' },
+          { name: 'Mælk', amount: '3', type: 'dl' },
+          { name: 'Skyr eller græsk yoghurt', amount: '2', type: 'dl' },
+          { name: 'Æg', amount: '2', type: 'stk' },
+          { name: 'Sukker', amount: '2', type: 'spsk' },
+          { name: 'Groft salt', amount: '¼', type: 'tsk' },
+          { name: 'Bagepulver', amount: '1½', type: 'tsk' },
+          { name: 'Smør - smeltet', amount: '50', type: 'g' },
+        ],
+      },
+      {
+        listTwo: [
+          { name: 'Ahornsirup', amount: '1', type: 'dl' },
+          { name: 'Blåbær', amount: '100', type: 'g' },
+          { name: 'Smør', amount: '50', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      { howTo: 'Pisk mel og mælk sammen med en håndmixer.' },
+      { howTo: 'Tilsæt kvark og pisk æg og resten af ingredienserne i.' },
+      {
+        howTo:
+          'Fordel 4 portioner dej a ca. ½ dl på panden. Bag pandekagerne ca. 2 min. på hver side. ',
+      },
+      { howTo: 'Server pandekagerne med ahornsirup, blåbær og smør.' },
+    ],
 
     page: 'opskrifter/quesadilla-i-lag.html',
   },
@@ -188,3 +256,5 @@ export let recipeData = [
     page: 'opskrifter/spaghetti-carbonara.html',
   },
 ];
+
+export default recipeData;

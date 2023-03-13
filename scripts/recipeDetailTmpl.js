@@ -1,6 +1,6 @@
-import { recipeDetailData } from './recipeDetail.js';
+import recipeData from './recipes.js';
 
-const renderRecipe = (data) => {
+export const renderDetailRecipe = (data) => {
   let recipeDetails = document.querySelector('.recipe_details');
   recipeDetails.innerHTML = '';
 
@@ -82,4 +82,4 @@ const renderRecipe = (data) => {
   });
 };
 
-renderRecipe(recipeDetailData);
+renderDetailRecipe(recipeData);

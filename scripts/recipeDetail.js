@@ -1,4 +1,4 @@
-export const recipeDetailData = [
+/* export const recipeDetailData = [
   {
     id: 0,
 
@@ -48,3 +48,4 @@ export const recipeDetailData = [
     ],
   },
 ];
+ */
