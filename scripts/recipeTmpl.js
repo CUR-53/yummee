@@ -8,9 +8,10 @@ const renderRecipe = (data) => {
   if (recipes) {
     recipes.innerHTML = '';
 
+    /* <div class="all ${accord.type}" onclick="location.href='opskrifter/template.html?id=${accord.id}'"> */
     data.forEach((accord) => {
       recipes.innerHTML += `
-    <div class="all ${accord.type}" onclick="location.href='opskrifter/template.html?id=${accord.id}'">
+    <div class="all ${accord.type}" onclick="location.href='${accord.page}'">
     <div class="recipe_img">
             <img src="${accord.image}" alt="${accord.imageAltText}" />
             <span class="category_name"
