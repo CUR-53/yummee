@@ -1,4 +1,4 @@
-/* import { renderDetailRecipe } from './recipeDetailTmpl.js'; */
+import { renderDetailRecipe } from './recipeDetailTmpl.js';
 import recipeData from './recipes.js';
 const pageProduct = document.querySelector('.page_product');
 
@@ -8,10 +8,10 @@ const renderRecipe = (data) => {
   if (recipes) {
     recipes.innerHTML = '';
 
-    /* <div class="all ${accord.type}" onclick="location.href='opskrifter/template.html?id=${accord.id}'"> */
     data.forEach((accord) => {
       recipes.innerHTML += `
-    <div class="all ${accord.type}" onclick="location.href='${accord.page}'">
+    <div class="all ${accord.type}" onclick="location.href='opskrifter/template.html?id=${accord.id}'">
+    
     <div class="recipe_img">
             <img src="${accord.image}" alt="${accord.imageAltText}" />
             <span class="category_name"
@@ -53,14 +53,6 @@ const renderRecipe = (data) => {
         </div>
         </div>`;
     });
-
-    /* if (recipes) {
-      products.forEach((product) => {
-        recipes.innerHTML += productTmpl(product);
-      });
-    } else {
-      console.log('Der er ingen item-container på denne side');
-    } */
   }
 };
 
@@ -75,8 +67,4 @@ if (pageProduct) {
   const foundProduct = products.find((product) => product.id == productID);
   console.log('foundProduct', foundProduct);
   productContainer.innerHTML += renderDetailRecipe(foundProduct);
-
-  // `<div><h1>${foundProduct.id} - ${foundProduct.title}</h1></div>`;
-
-  //productDetailTmpl(foundProduct);
 }
