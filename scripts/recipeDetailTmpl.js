@@ -5,7 +5,6 @@ export const renderDetailRecipe = (data) => {
 
   if (Array.isArray(data)) {
     data.forEach((recipeData) => {
-      console.log(recipeData, 'hello');
       recipeData.ingredients[0].list.forEach((ingredient) => {
         ingredientsListHTML += `
           <li>
