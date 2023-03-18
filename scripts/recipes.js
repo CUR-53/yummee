@@ -1,4 +1,5 @@
 const recipeData = [
+  // Amerikanske pandekager
   {
     id: 0,
 
@@ -21,6 +22,7 @@ const recipeData = [
 
     ingredients: [
       {
+        ingredientsTitle: 'Amerikanske pandekager',
         list: [
           { name: 'Hvedemel', amount: '300', type: 'g' },
           { name: 'Mælk', amount: '3', type: 'dl' },
@@ -33,7 +35,8 @@ const recipeData = [
         ],
       },
       {
-        listTwo: [
+        ingredientsTitle: 'Tilbehør',
+        list: [
           { name: 'Ahornsirup', amount: '1', type: 'dl' },
           { name: 'Blåbær', amount: '100', type: 'g' },
           { name: 'Smør', amount: '50', type: 'g' },
@@ -42,18 +45,21 @@ const recipeData = [
     ],
 
     howToList: [
-      { howTo: 'Pisk mel og mælk sammen med en håndmixer.' },
-      { howTo: 'Tilsæt kvark og pisk æg og resten af ingredienserne i.' },
       {
-        howTo:
-          'Fordel 4 portioner dej a ca. ½ dl på panden. Bag pandekagerne ca. 2 min. på hver side. ',
+        howTo: [
+          { step: 'Pisk mel og mælk sammen med en håndmixer.' },
+          { step: 'Pisk mel og mælk sammen med en håndmixer.' },
+          { step: 'Tilsæt kvark og pisk æg og resten af ingredienserne i.' },
+          {
+            step: 'Fordel 4 portioner dej a ca. ½ dl på panden. Bag pandekagerne ca. 2 min. på hver side. ',
+          },
+          { step: 'Server pandekagerne med ahornsirup, blåbær og smør.' },
+        ],
       },
-      { howTo: 'Server pandekagerne med ahornsirup, blåbær og smør.' },
     ],
-
-    page: 'opskrifter/amerikanske-pandekager.html',
   },
 
+  // Quesadilla i lag
   {
     id: 1,
 
@@ -74,24 +80,31 @@ const recipeData = [
     person: '4',
     language: 'Mecicansk',
 
-    listName: 'Peberfrugtblanding',
-    listNameTwo: 'Quesadilla i lag',
-
     ingredients: [
       {
+        ingredientsTitle: 'Peberfrugtblanding',
         list: [
-          { name: 'Smør', amount: '20', type: 'g' },
+          { name: 'Smør', amount: '10', type: 'g' },
           { name: 'Finthakket rødløg', amount: '1', type: 'stk' },
           { name: 'Små knuste fed hvidløg', amount: '2', type: 'stk' },
           { name: 'Peberfrugter', amount: '2', type: 'stk' },
           { name: 'Tomater i mindre stykker', amount: '4', type: 'stk' },
-          { name: 'Groft salt', amount: '2', type: 'tsk' },
-          { name: 'Kyllingefilet i strimler', amount: '400', type: 'g' },
+          { name: 'Groft salt', amount: '1', type: 'stk' },
           { name: 'Friskkværnet peber', amount: '', type: '' },
         ],
       },
       {
-        listTwo: [
+        ingredientsTitle: 'Kylling',
+        list: [
+          { name: 'Smør', amount: '10', type: 'g' },
+          { name: 'Kyllingefilet i strimler', amount: '400', type: 'g' },
+          { name: 'Groft salt', amount: '1', type: 'stk' },
+          { name: 'Friskkværnet peber', amount: '', type: '' },
+        ],
+      },
+      {
+        ingredientsTitle: 'Quesadilla i lag',
+        list: [
           { name: 'Fuldkornstortillaer', amount: '6', type: 'stk' },
           { name: 'revet Mozzarella', amount: '140', type: 'g' },
           { name: 'Rødløg i tynde halve ringe', amount: '1', type: 'stk' },
@@ -104,53 +117,46 @@ const recipeData = [
 
     howToList: [
       {
-        howTo:
-          'Lad smørret smelte i en stor pande ved kraftig varme, men uden at det bruner.',
-      },
-      { howTo: 'Svits løg og hvidløg i ca. 1 min.' },
-      {
-        howTo:
-          'Tilsæt peberfrugter, tomater, salt og peber og svits i yderligere ca. 4 min.',
-      },
-      { howTo: 'Hæld peberfrugtblandingen i en skål og tør panden af.' },
-      {
-        howTo:
-          '<strong>Kylling</strong> <br>Lad smørret blive gyldent i panden og steg kyllingestrimlerne i ca. 3 min., drys med salt og peber.',
+        howToTitle: 'Peberfrugtblanding',
+        howTo: [
+          { step: 'Lad smørret smelte i en stor pande ved kraftig varme, men uden at det bruner.' },
+          { step: 'Svits løg og hvidløg i ca. 1 min.' },
+          { step: 'Tilsæt peberfrugter, tomater, salt og peber og svits i yderligere ca. 4 min.' },
+          { step: 'Hæld peberfrugtblandingen i en skål og tør panden af.' },
+        ],
       },
       {
-        howTo:
-          '<strong>Quesadillas i lag</strong> <br>Læg tortillaerne sammen 3 og 3 således; Læg 1 tortilla på en plade med bagepapir og fordel herpå ¼ af peberfrugtblandingen, ¼ af kyllingekødet og lidt af osten.',
-      },
-      { howTo: 'Gentag og afslut med 1 tortilla og lidt ost på toppen.' },
-      {
-        howTo:
-          'Gør det samme med de sidste 3 tortillaer på en anden bageplade.',
+        howToTitle: 'Kylling',
+        howTo: [{ step: 'Lad smørret blive gyldent i panden og steg kyllingestrimlerne i ca. 3 min., drys med salt og peber.' }],
       },
       {
-        howTo: 'Gratiner dem indtil osten er smeltet og gylden.',
+        howToTitle: 'Quesadillas i lag',
+        howTo: [
+          {
+            step: 'Læg tortillaerne sammen 3 og 3 således; Læg 1 tortilla på en plade med bagepapir og fordel herpå ¼ af peberfrugtblandingen, ¼ af kyllingekødet og lidt af osten.',
+          },
+          { step: 'Gentag og afslut med 1 tortilla og lidt ost på toppen.' },
+          { step: 'Gør det samme med de sidste 3 tortillaer på en anden bageplade.' },
+          { step: 'Gratiner dem indtil osten er smeltet og gylden.' },
+        ],
       },
       {
-        howTo:
-          '<strong>Servering af quesadillas i lag</strong><br> Læg imens agurkerne på et lille fladt fad.',
+        howToTitle: 'Servering af quesadillas i lag',
+        howTo: [
+          { step: 'Læg imens agurkerne på et lille fladt fad.' },
+          { step: 'Bland rødløg og limesaft sammen og fordel det over agurkerne.' },
+          { step: 'Del de bagte quesadillas og server dem sammen med agurker og salsa.' },
+          { step: 'Top det hele med friske koriander.' },
+        ],
       },
       {
-        howTo: 'Bland rødløg og limesaft sammen og fordel det over agurkerne.',
-      },
-      {
-        howTo:
-          'Del de bagte quesadillas og server dem sammen med agurker og salsa.',
-      },
-      {
-        howTo: 'Top det hele med friske koriander.',
-      },
-      {
-        howTo: '<strong></strong> Gratinering Ca. 5 min. ved 225° - varmluft.',
+        howToTitle: 'Gratinering',
+        howTo: [{ step: 'Gratinering Ca. 5 min. ved 225° - varmluft.' }],
       },
     ],
-
-    page: 'opskrifter/quesadilla-i-lag.html',
   },
 
+  // Tomatsuppe med sprød gremolata
   {
     id: 2,
 
@@ -162,14 +168,64 @@ const recipeData = [
     imageAltText: 'tomatsuppe med peberfrugt og sprød gremolata',
 
     title: 'Tomatsuppe med sprød gremolata',
-    description:
+    shortDescription:
       'En super hurtig vegetarisk tomatsuppe med flotte farver. Tomatsuppen er fyldt med grøntsager. Som ekstra pift er den toppet op med en sprød gremolata.',
+    description:
+      'En super hurtig vegetarisk tomatsuppe med flotte farver. Tomatsuppen er fyldt med grøntsager. Som ekstra pift er den toppet op med en sprød gremolata. Gremolata er fantastisk, når du vil have ekstra smag til en ret. Originalen består af persille, hvidløg og citronskal. Vi har ladet os inspirere og givet den knas fra de ristede græskarkerner og fylde og lidt sødme fra æbler. Tomatsuppe med peberfrugt og sprød gremolata er til de dage, hvor det gerne må være nemt, samtidig med, at du vil sætte dit eget fingeraftryk på aftensmaden.',
 
     time: '25',
     person: '4',
     language: 'Spansk',
 
-    page: 'opskrifter/tomatsuppe-med-sprød-gremolata.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Tomatsuppe',
+        list: [
+          { name: 'Rapsolie', amount: '½', type: 'spsk' },
+          { name: 'Finthakkede rødløg', amount: '2', type: 'stk' },
+          { name: 'Tomatsuppe', amount: '1', type: 'liter' },
+          { name: 'Vand', amount: '1½', type: 'dl' },
+          { name: 'Groft salt', amount: '½', type: 'tsk' },
+          { name: 'Peberfrugter i korte strimler', amount: '3', type: 'stk' },
+        ],
+      },
+      {
+        ingredientsTitle: 'Gremolata',
+        list: [
+          { name: 'Græskarkerner', amount: '5', type: 'spsk' },
+          { name: 'Grofthakket bredbladet persille', amount: '2', type: 'dl' },
+          { name: 'Fintrevet citronskal', amount: '2', type: 'tsk' },
+          { name: 'Røde æbler i små tern', amount: '2', type: 'stk' },
+        ],
+      },
+      {
+        ingredientsTitle: 'Tilbehør',
+        list: [{ name: 'Italiensk flute - evt. ristet', amount: '300', type: 'g' }],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Tomatsuppe',
+        howTo: [
+          { step: 'Lad olien blive varm i en gryde.' },
+          { step: 'Svits løgene ved jævn varme i ca. 2 min' },
+          { step: 'Tilsæt tomatsuppe, vand, salt og peber og bring suppen i kog under omrøring.' },
+          { step: 'Kom peberfrugterne i og kog suppen ved svag varme i ca. 3 min. Smag til. Gremolata' },
+        ],
+      },
+      {
+        howToTitle: 'Gremolata',
+        howTo: [
+          { step: 'Kom græskarkernerne i en tør pande og rist dem ved kraftig varme i ca. 3 min. - rør af og til.' },
+          { step: 'Bland græskarkernerne med persille, citronskal og æbletern.' },
+        ],
+      },
+      {
+        howToTitle: 'Ved serveringen',
+        howTo: [{ step: 'Kom tomatsuppen i varme skåle og drys lidt gremolata på toppen. Server med resten af gremolataen og flute.' }],
+      },
+    ],
   },
 
   {
@@ -267,8 +323,7 @@ const recipeData = [
     imageAltText: 'Muffins med chokoladestykker',
 
     title: 'Muffins med chokoladestykker',
-    description:
-      'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
+    description: 'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
 
     time: '45',
     person: '4',

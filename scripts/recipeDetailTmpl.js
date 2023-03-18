@@ -1,9 +1,16 @@
 export const renderDetailRecipe = (data) => {
   let ingredientsListHTML = '';
-  let ingredientsListTwoHTML = '';
+  let ingredientsListHTMLTwo = '';
+  let ingredientsListHTMLTre = '';
+
   let howToHTML = '';
+  let howToHTMLTwo = '';
+  let howToHTMLTre = '';
+  let howToHTMLFour = '';
+  let howToHTMLFive = '';
 
   if (typeof data === 'object') {
+    // ingredients forEach lists
     data.ingredients[0].list.forEach((ingredient) => {
       ingredientsListHTML += `
         <li>
@@ -13,20 +20,66 @@ export const renderDetailRecipe = (data) => {
       `;
     });
 
-    data.ingredients[1].listTwo.forEach((ingredient) => {
-      ingredientsListTwoHTML += `
+    if (data.ingredients.length > 1) {
+      data.ingredients[1].list.forEach((ingredient) => {
+        ingredientsListHTMLTwo += `
         <li>
           <p>${ingredient.name}</p>
           <p>${ingredient.amount} ${ingredient.type}</p>
         </li>
       `;
-    });
+      });
+    }
 
-    data.howToList.forEach((step) => {
+    if (data.ingredients.length > 2) {
+      data.ingredients[2].list.forEach((ingredient) => {
+        ingredientsListHTMLTre += `
+        <li>
+          <p>${ingredient.name}</p>
+          <p>${ingredient.amount} ${ingredient.type}</p>
+        </li>
+      `;
+      });
+    }
+
+    // How to forEach lists
+    data.howToList[0].howTo.forEach((howTo) => {
       howToHTML += `
-        <li>${step.howTo}</li>
+        <li>${howTo.step}</li>
       `;
     });
+
+    if (data.howToList.length > 1) {
+      data.howToList[1].howTo.forEach((howTo) => {
+        howToHTMLTwo += `
+          <li>${howTo.step}</li>
+        `;
+      });
+    }
+
+    if (data.howToList.length > 2) {
+      data.howToList[2].howTo.forEach((howTo) => {
+        howToHTMLTre += `
+          <li>${howTo.step}</li>
+        `;
+      });
+    }
+
+    if (data.howToList.length > 3) {
+      data.howToList[3].howTo.forEach((howTo) => {
+        howToHTMLFour += `
+          <li>${howTo.step}</li>
+        `;
+      });
+    }
+
+    if (data.howToList.length > 4) {
+      data.howToList[4].howTo.forEach((howTo) => {
+        howToHTMLFive += `
+          <li>${howTo.step}</li>
+        `;
+      });
+    }
   }
 
   return `
@@ -56,10 +109,10 @@ export const renderDetailRecipe = (data) => {
             ${data.person} personer
           </h3>
           <ul>
-            <h4>${data.listName}</h4>
+            <h4>${data.ingredients[0].ingredientsTitle}</h4>
             ${ingredientsListHTML}
-            <h4>${data.listNameTwo}</h4>
-            ${ingredientsListTwoHTML}
+            ${ingredientsListHTMLTwo.length > 0 ? `<h4>${data.ingredients[1].ingredientsTitle}</h4>${ingredientsListHTMLTwo}` : ''}
+            ${ingredientsListHTMLTre.length > 0 ? `<h4>${data.ingredients[2].ingredientsTitle}</h4>${ingredientsListHTMLTre}` : ''}
           </ul>
         </div>
       </div>
@@ -67,8 +120,12 @@ export const renderDetailRecipe = (data) => {
         <div class="howTo_list">
           <h2>Sådan gør du</h2>
           <ol>
-            <h4>${data.title}</h4>
+            <h4>${data.howToList[0].howToTitle}</h4>
             ${howToHTML}
+            ${howToHTMLTwo.length > 0 ? `<h4>${data.howToList[1].howToTitle}</h4>${howToHTMLTwo}` : ''}
+            ${howToHTMLTre.length > 0 ? `<h4>${data.howToList[2].howToTitle}</h4>${howToHTMLTre}` : ''}
+            ${howToHTMLFour.length > 0 ? `<h4>${data.howToList[3].howToTitle}</h4>${howToHTMLFour}` : ''}
+            ${howToHTMLFive.length > 0 ? `<h4>${data.howToList[4].howToTitle}</h4>${howToHTMLFive}` : ''}
             <h4>Velbekomme!</h4>
           </ol>
         </div>
