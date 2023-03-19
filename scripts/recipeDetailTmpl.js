@@ -88,7 +88,7 @@ export const renderDetailRecipe = (data) => {
         <h1>${data.title}</h1>
         <div class="mainText_info_boxes">
           <p><img src="/assets/clock_icon.svg" alt="tid ikon" />${data.time}m</p>
-          <p><img src="/assets/per_icon.svg" alt="person ikon" />${data.person} per.</p>
+          <p><img src="/assets/per_icon.svg" alt="person ikon" />${data.person}</p>
           <p>
             <img src="/assets/tool_icon.svg" alt="køkken ikon" />${data.language}
           </p>

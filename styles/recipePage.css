@@ -7,16 +7,12 @@
 /* ===== BASE SITE CSS START ===== */
 :root {
   --white-: #fff;
-  --darkBlue-: #003049; /* Primary color */
-  --darkBlue-: #003049; /* Primary color */
-  --green-: #009660; /* Primary color */
-  --green-: #009660; /* Primary color */
-  --orange-: #e87b17; /* Primary color */
-  --orange-: #e87b17; /* Primary color */
-  --red-: #c62f26; /* Primary color */
-  --red-: #c62f26; /* Primary color */
-  --lightBlue: #308f95; /* Primary color */
-  --lightBlue: #308f95; /* Primary color */
+  /* Primary colors */
+  --darkBlue-: #003049;
+  --green-: #009660;
+  --orange-: #e87b17;
+  --red-: #c62f26;
+  --lightBlue: #308f95;
   --lightGrey-: #989898;
 }
 
@@ -196,7 +192,7 @@ body {
 
   margin-bottom: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 
   color: #fff;
 
@@ -250,7 +246,7 @@ body {
 }
 
 .howTo_list ol h4 {
-  margin: 40px -18px 10px;
+  margin: 40px 0px 10px;
 
   font-size: 18px;
   font-weight: 700;
@@ -265,16 +261,18 @@ body {
 
 .howTo_list ol {
   position: relative;
+  border-collapse: separate;
+  border-spacing: 0rem 0.8rem;
 
   max-width: 700px;
-  margin-left: 20px;
+
+  counter-reset: list;
 }
 
 .howTo_list ol::before {
   content: '';
 
   position: absolute;
-  left: 8%;
   top: 0;
   z-index: -1;
 
@@ -283,15 +281,22 @@ body {
 }
 
 .howTo_list ol li {
-  padding: 0.5rem 1rem 1rem;
+  display: table-row;
+
+  list-style: none;
+  counter-increment: list;
+}
+
+.howTo_list ol li::before {
+  content: counter(list) '.';
+  display: table-cell;
+
+  margin-right: 5px;
+  padding-right: 1em;
+
+  font-weight: 600;
 }
 
 .howTo_list li + li {
   margin-top: 1rem;
-}
-
-.howTo_list ol li::marker {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--darkBlue-);
 }
