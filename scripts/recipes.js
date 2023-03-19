@@ -7,7 +7,7 @@ const recipeData = [
     category: '/assets/breakfast_icon.svg',
     categoryAltText: 'breakfast ikon',
 
-    image: '/assets/amerikanske-pandekager.jpg',
+    image: '/assets/recipe-img/amerikanske-pandekager.jpg',
     imageAltText: 'Amerikanske pandekager',
 
     title: 'Amerikanske pandekager',
@@ -46,6 +46,7 @@ const recipeData = [
 
     howToList: [
       {
+        howToTitle: 'Amerikanske pandekager',
         howTo: [
           { step: 'Pisk mel og mælk sammen med en håndmixer.' },
           { step: 'Pisk mel og mælk sammen med en håndmixer.' },
@@ -164,7 +165,7 @@ const recipeData = [
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
 
-    image: '/assets/tomatsuppe-med-peberfrugt-og-sprod-gremolata.jpg',
+    image: '/assets/recipe-img/tomatsuppe.jpg',
     imageAltText: 'tomatsuppe med peberfrugt og sprød gremolata',
 
     title: 'Tomatsuppe med sprød gremolata',
@@ -235,11 +236,11 @@ const recipeData = [
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
 
-    image: '/assets/creme-brulee.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'creme brulee',
 
     title: 'Creme brulee',
-    description:
+    shortDescription:
       'Creme brulee er en af de klassiske franske desserter, der består af fløde, vanilje, æggeblommer og sukker afsluttet med et tyndt låg af sprødt brændt sukker.',
 
     time: '25',
@@ -256,11 +257,11 @@ const recipeData = [
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
 
-    image: '/assets/wok-med-kylling-nudler-og-grontsager.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'Wok med kylling, nudler og grøntsager',
 
     title: 'Wok med kylling, nudler og grøntsager',
-    description:
+    shortDescription:
       'Wok med kylling, nudler og grøntsager - en dejlig asiatisk inspireret wokret med masser af grønt og sprød topping af ristede cashewnødder og friske forårsløg. ',
 
     time: '30',
@@ -277,11 +278,11 @@ const recipeData = [
     category: '/assets/lunch_icon.svg',
     categoryAltText: 'lunch ikon',
 
-    image: '/assets/mozzarella-sticks.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'Mozzarella sticks',
 
     title: 'Mozzarella sticks',
-    description:
+    shortDescription:
       'Cheesesticks eller mozzarella sticks er fastfood eller street food, når det er rigtig fedt eller fedtet... Her bliver mozarella sticks serveret i en ny udgave med mere smag.',
 
     time: '30',
@@ -298,11 +299,11 @@ const recipeData = [
     category: '/assets/breakfast_icon.svg',
     categoryAltText: 'breakfast ikon',
 
-    image: '/assets/belgiske-vafler.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'Belgiske vafler',
 
     title: 'Belgiske vafler',
-    description:
+    shortDescription:
       'Belgiske vafler er en rigtig dejlig hyggespise. Server hjemmelavede belgiske vafler efter en kølig gåtur, til weekendens morgenmad eller til brunch. Vaflerne er sprøde udenpå og bløde indeni.',
 
     time: '30',
@@ -319,11 +320,11 @@ const recipeData = [
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
 
-    image: '/assets/muffins-med-chokoladestykker.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'Muffins med chokoladestykker',
 
     title: 'Muffins med chokoladestykker',
-    description: 'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
+    shortDescription: 'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
 
     time: '45',
     person: '4',
@@ -339,11 +340,11 @@ const recipeData = [
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
 
-    image: '/assets/spaghetti-carbonara.jpg',
+    image: '/assets/recipe-img/placeholder.jpg',
     imageAltText: 'Spaghetti Carbonara',
 
     title: 'Spaghetti Carbonara',
-    description:
+    shortDescription:
       'Spaghetti Carbonara - næsten som at sidde på en italiensk restaurant. Vi foreslår en tomatsalat til Spaghetti Cabonara. Det ville de nok ikke gøre i Italien, de ville spise salaten bagefter.',
 
     time: '45',
