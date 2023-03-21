@@ -49,7 +49,6 @@ const recipeData = [
         howToTitle: 'Amerikanske pandekager',
         howTo: [
           { step: 'Pisk mel og mælk sammen med en håndmixer.' },
-          { step: 'Pisk mel og mælk sammen med en håndmixer.' },
           { step: 'Tilsæt kvark og pisk æg og resten af ingredienserne i.' },
           {
             step: 'Fordel 4 portioner dej a ca. ½ dl på panden. Bag pandekagerne ca. 2 min. på hver side. ',
@@ -229,6 +228,7 @@ const recipeData = [
     ],
   },
 
+  // Creme brulé
   {
     id: 3,
 
@@ -236,18 +236,54 @@ const recipeData = [
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/creme-brulee.jpg',
     imageAltText: 'creme brulee',
 
     title: 'Creme brulee',
     shortDescription:
       'Creme brulee er en af de klassiske franske desserter, der består af fløde, vanilje, æggeblommer og sukker afsluttet med et tyndt låg af sprødt brændt sukker.',
+    description:
+      'Creme brulé er en af de klassiske franske desserter, der består af fløde, vanilje, æggeblommer og sukker afsluttet med et tyndt låg af             sprødt brændt sukker. Creme brulé betyder brændt creme - og det er jo lige hvad creme brulé er. Først bages cremen til creme bruléen i ovnen og så køles den ned. Den kolde creme drysses så med et tyndt lag sukker, som du karamelliserer med fx med en gasbrænder. Voila - så er din creme brulé klar til servering!',
 
     time: '25',
     person: '4',
     language: 'Fransk',
+    ingredients: [
+      {
+        ingredientsTitle: 'Creme brulé',
+        list: [
+          { name: 'Æggeblommer', amount: '4', type: 'stk' },
+          { name: 'Sukker', amount: '85', type: 'g' },
+          { name: 'Vaniljestang - kornene heraf', amount: '½', type: 'stk' },
+          { name: 'Piskefløde', amount: '¼', type: 'liter' },
+          { name: 'Sødmælk', amount: '1', type: 'dl' },
+          { name: 'sukker', amount: '1', type: 'spsk' },
+        ],
+      },
+    ],
 
-    page: 'opskrifter/creme-brulee.html',
+    howToList: [
+      {
+        howToTitle: 'Creme brulé',
+        howTo: [
+          { step: 'Rør æggeblommer, sukker og vaniljekorn sammen med en ske. Rør herefter fløde og mælk i æggeblandingen.' },
+          { step: 'Sigt blandingen og fordel den i 4 ovnfaste skåle (a ca. 2 dl). Stil skålene på en bageplade og bag dem midt i ovnen.' },
+          { step: 'Cremen skælver når du tager den ud af ovnen, men sætter sig når den er afkølet.' },
+          { step: 'Stil creme brulérne i køleskabet i mindst 3 timer - uden at dække dem til.' },
+        ],
+      },
+      {
+        howToTitle: 'Ved serveringen',
+        howTo: [
+          { step: 'Drys de iskolde creme bruléer med sukker og brænd dem med en gasbrænder til sukkeret er smeltet og har taget farve.' },
+          { step: 'Server straks.' },
+        ],
+      },
+      {
+        howToTitle: 'Bagetid',
+        howTo: [{ step: 'ca. 50 min. ved 125° - traditionel ovn.' }],
+      },
+    ],
   },
 
   {
