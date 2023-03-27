@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Your Go-To Destination For Recipes And Food Inspiration"
-    />
+    <meta name="description" content="Your Go-To Destination For Recipes And Food Inspiration" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/mainStyles.css" />
@@ -21,12 +18,9 @@
       <!-- Navigations menu -->
       <nav>
         <div class="nav_container">
-          <div
-            class="logo"
-            onclick="window.location.href = 'https://yummee.dk';"
-          >
+          <div class="logo" onclick="window.location.href = 'https://yummee.dk';">
             <img src="assets/profile_icon.svg" alt="Your profil" />
-            <p><a href="https://yummee.dk">Profil</a></p>
+            <p><a href="https://yummee.dk"></a></p>
           </div>
           <!-- Home icon -->
           <div class="home_icon" onclick="location.href='#home';">
@@ -43,89 +37,58 @@
         <div class="burgermenu_container">
           <ul class="list_styles">
             <li>
-              <a href="index.html" alt="Hjem" class="nav_link darkBlue"
-                >Forside</a
-              >
+              <a href="index.html" alt="Hjem" class="nav_link darkBlue">Forside</a>
             </li>
             <li>
-              <a href="index.html" alt="Morgenmad" class="nav_link green"
-                >Morgenmad</a
-              >
+              <a href="index.html" alt="Morgenmad" class="nav_link green">Morgenmad</a>
             </li>
             <li>
-              <a href="index.html" alt="Middagsmad" class="nav_link orange"
-                >Middagsmad</a
-              >
+              <a href="index.html" alt="Middagsmad" class="nav_link orange">Middagsmad</a>
             </li>
             <li>
-              <a href="index.html" alt="Aftensmad" class="nav_link red"
-                >Aftensmad</a
-              >
+              <a href="index.html" alt="Aftensmad" class="nav_link red">Aftensmad</a>
             </li>
             <li>
-              <a href="index.html" alt="Dessert" class="nav_link lightBlue"
-                >Dessert</a
-              >
+              <a href="index.html" alt="Dessert" class="nav_link lightBlue">Dessert</a>
             </li>
           </ul>
         </div>
       </nav>
       <!--   Hero search section -->
-      <section class="hero_container">
-        <h1>Yummee</h1>
-        <h2>Din Go-To Destination For Opskrifter Og Madinspiration</h2>
-        <form class="search_input" autocomplete="off">
-          <i class="search_icon">
-            <img src="assets/search_icon.svg" alt="Søg ikon" />
-          </i>
-          <input
-            type="text"
-            name="recipe_search"
-            placeholder="Find din næste opskrift"
-          />
-          <div class="autocom_box">
-            <!-- javascript suggestions -->
-          </div>
-        </form>
+      <section class="hero_section">
+        <div class="hero_text">
+          <h1>Yummee</h1>
+          <h2>Din Go-To Destination For Opskrifter Og Madinspiration</h2>
+        </div>
+        <div class="search_container">
+          <form class="search_input" autocomplete="off">
+            <i class="search_icon">
+              <img src="assets/search_icon.svg" alt="Søg ikon" />
+            </i>
+            <input type="text" name="recipe_search" placeholder="Find din næste opskrift" />
+            <div class="autocom_box">
+              <!-- javascript suggestions -->
+            </div>
+          </form>
+        </div>
       </section>
     </header>
     <!-- Filter section -->
     <section class="filter_container">
       <div class="filter_btns">
-        <a
-          class="grid_span_2 darkBlue category-title"
-          alt="Hvis alle link"
-          id="all"
-          >Alle</a
-        >
+        <a class="grid_span_2 darkBlue category-title" alt="Hvis alle link" id="all">Alle</a>
         <a class="green category-title" alt="Morgenmads link" id="breakfast">
-          <img
-            class="filter_icon_width"
-            src="assets/green_icon.svg"
-            alt="Morgenmads ikon"
-          />
+          <img class="filter_icon_width" src="assets/green_icon.svg" alt="Morgenmads ikon" />
           <p>Morgenmad</p>
         </a>
         <a class="orange category-title" alt="Middagsmads link" id="lunch">
-          <img
-            class="filter_icon_width_2"
-            src="assets/orange_icon.svg"
-            alt="Middagsmads ikon"
-          />Middagsmad</a
+          <img class="filter_icon_width_2" src="assets/orange_icon.svg" alt="Middagsmads ikon" />Middagsmad</a
         >
         <a class="red category-title" alt="Aftensmads link" id="dinner">
-          <img
-            class="filter_icon_width"
-            src="assets/red_icon.svg"
-            alt="Aftensmads ikon"
-          />Aftensmad</a
+          <img class="filter_icon_width" src="assets/red_icon.svg" alt="Aftensmads ikon" />Aftensmad</a
         >
         <a class="lightBlue category-title" alt="Desserts link" id="dessert">
-          <img
-            class="filter_icon_width"
-            src="assets/lightBlue_icon.svg"
-            alt="Desserts ikon"
-          />Dessert</a
+          <img class="filter_icon_width" src="assets/lightBlue_icon.svg" alt="Desserts ikon" />Dessert</a
         >
       </div>
     </section>
