@@ -297,6 +297,8 @@ const recipeData = [
     imageAltText: 'Wok med kylling, nudler og grøntsager',
 
     title: 'Wok med kylling, nudler og grøntsager',
+    description:
+      'Wok med kylling, nudler og grøntsager - en dejlig asiatisk inspireret wokret med masser af grønt og sprød topping af ristede cashewnødder og friske forårsløg. Når du har lyst til wok med kylling, kan du anvende de grøntsager du har i køleskabet - og smage til med dine yndlingskrydderier. Denne opskrift på wok med nudler giver dig et udgangspunkt at starte med, og pludselig har du måske din helt egen signaturopskrift på nudler med kylling.',
     shortDescription:
       'Wok med kylling, nudler og grøntsager - en dejlig asiatisk inspireret wokret med masser af grønt og sprød topping af ristede cashewnødder og friske forårsløg. ',
 
@@ -304,7 +306,38 @@ const recipeData = [
     person: '4',
     language: 'Japansk',
 
-    page: 'opskrifter/wok-med-kylling-nudler-og-grøntsager.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Wok med kylling, nudler og grøntsager',
+        list: [
+          { name: 'Rapsolie', amount: '½', type: 'spsk' },
+          { name: 'Små gulerødder i grove stykker', amount: '200', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Creme brulé',
+        howTo: [
+          { step: 'Rør æggeblommer, sukker og vaniljekorn sammen med en ske. Rør herefter fløde og mælk i æggeblandingen.' },
+          { step: 'Sigt blandingen og fordel den i 4 ovnfaste skåle (a ca. 2 dl). Stil skålene på en bageplade og bag dem midt i ovnen.' },
+          { step: 'Cremen skælver når du tager den ud af ovnen, men sætter sig når den er afkølet.' },
+          { step: 'Stil creme brulérne i køleskabet i mindst 3 timer - uden at dække dem til.' },
+        ],
+      },
+      {
+        howToTitle: 'Ved serveringen',
+        howTo: [
+          { step: 'Drys de iskolde creme bruléer med sukker og brænd dem med en gasbrænder til sukkeret er smeltet og har taget farve.' },
+          { step: 'Server straks.' },
+        ],
+      },
+      {
+        howToTitle: 'Bagetid',
+        howTo: [{ step: 'ca. 50 min. ved 125° - traditionel ovn.' }],
+      },
+    ],
   },
 
   {
