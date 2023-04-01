@@ -293,7 +293,7 @@ const recipeData = [
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/wok-med-kylling.jpg',
     imageAltText: 'Wok med kylling, nudler og grøntsager',
 
     title: 'Wok med kylling, nudler og grøntsager',
@@ -312,30 +312,32 @@ const recipeData = [
         list: [
           { name: 'Rapsolie', amount: '½', type: 'spsk' },
           { name: 'Små gulerødder i grove stykker', amount: '200', type: 'g' },
+          { name: 'Rødløg i ringe', amount: '2', type: 'stk' },
+          { name: 'Broccoli i buketter med stilk', amount: '200', type: 'g' },
+          { name: 'Kyllingefilet i mundrette stykker', amount: '400', type: 'g' },
+          { name: 'Karry', amount: '3', type: 'tsk' },
+          { name: 'Madlavningsfløde 8%', amount: '½', type: 'spsk' },
+          { name: 'Østerssauce', amount: '1½', type: 'spsk' },
+          { name: 'Groft salt', amount: '1', type: 'tsk' },
+          { name: 'Fintsnittede forårsløg', amount: '½', type: 'bundt' },
+          { name: 'Grofthakkede, ristede cashewnødder', amount: '', type: '' },
         ],
       },
     ],
 
     howToList: [
       {
-        howToTitle: 'Creme brulé',
+        howToTitle: 'Wok med kylling, nudler og grøntsager',
         howTo: [
-          { step: 'Rør æggeblommer, sukker og vaniljekorn sammen med en ske. Rør herefter fløde og mælk i æggeblandingen.' },
-          { step: 'Sigt blandingen og fordel den i 4 ovnfaste skåle (a ca. 2 dl). Stil skålene på en bageplade og bag dem midt i ovnen.' },
-          { step: 'Cremen skælver når du tager den ud af ovnen, men sætter sig når den er afkølet.' },
-          { step: 'Stil creme brulérne i køleskabet i mindst 3 timer - uden at dække dem til.' },
+          {
+            step: 'Lad olien blive varm i sauterpanden og steg gulerødder, rødløg og broccoli ved kraftig varme i ca. 3 min. Tag grøntsagerne op af panden og gem dem.',
+          },
+          { step: 'Lad olien blive varm i sauterpanden og svits kyllingekødet i ca. 2 min.' },
+          { step: 'Tilsæt karry, fløde, honning, østersauce og salt og vend godt rundt.' },
+          { step: 'Tilsæt grøntsagerne og lad retten koge ved svag varme og under låg i ca. 3 min. Smag til.' },
+          { step: 'Kog imens nudlerne efter anvisningen på pakken. Hæld dem til afdrypning i en sigte og vend dem sammen med kylling og grøntsager.' },
+          { step: 'Drys med forårsløg og cashewnødder og server straks.' },
         ],
-      },
-      {
-        howToTitle: 'Ved serveringen',
-        howTo: [
-          { step: 'Drys de iskolde creme bruléer med sukker og brænd dem med en gasbrænder til sukkeret er smeltet og har taget farve.' },
-          { step: 'Server straks.' },
-        ],
-      },
-      {
-        howToTitle: 'Bagetid',
-        howTo: [{ step: 'ca. 50 min. ved 125° - traditionel ovn.' }],
       },
     ],
   },
@@ -347,10 +349,12 @@ const recipeData = [
     category: '/assets/lunch_icon.svg',
     categoryAltText: 'lunch ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/mozzarella-sticks.jpg',
     imageAltText: 'Mozzarella sticks',
 
     title: 'Mozzarella sticks',
+    description:
+      'Cheesesticks eller mozzarella sticks er fastfood eller street food, når det er rigtig fedt eller fedtet... Her bliver mozarella sticks serveret i en ny udgave med mere smag. Osten er blandet med løg, persille, hvidløg og citron, inden den er rullet i filodej. Det giver en dejlig frisk smag, som klæder de sprøde mozarella sticks virkelig godt. Server evt. chimichurri til - se link nederst i opskriften.',
     shortDescription:
       'Cheesesticks eller mozzarella sticks er fastfood eller street food, når det er rigtig fedt eller fedtet... Her bliver mozarella sticks serveret i en ny udgave med mere smag.',
 
@@ -358,7 +362,38 @@ const recipeData = [
     person: '4',
     language: 'Fransk',
 
-    page: 'opskrifter/mozzarella-sticks.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Mozzarella sticks',
+        list: [
+          { name: 'Rasp', amount: '1', type: 'dl' },
+          { name: 'Finthakket frisk persille', amount: '1', type: 'dl' },
+          { name: 'Groft salt', amount: '½', type: 'tsk' },
+          { name: 'Mozzarella Tern', amount: '200', type: 'g' },
+          { name: 'Finthakket rødløg', amount: '1', type: 'stk' },
+          { name: 'Finthakket frisk persille', amount: '1', type: 'dl' },
+          { name: 'Citronskal (usprøjtet)', amount: '2', type: 'stk' },
+          { name: 'Finthakkede fed hvidløg', amount: '2', type: 'stk' },
+          { name: 'Filodej af ca. 10x10 cm', amount: '12', type: 'stk' },
+          { name: 'Sammenpiskede æg', amount: '2', type: 'stk' },
+          { name: 'Rapsolie - fritering', amount: '½', type: 'liter' },
+          { name: 'Flagesalt', amount: '', type: '' },
+        ],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Mozzarella sticks',
+        howTo: [
+          { step: 'Blend rasp med persille og salt.' },
+          { step: 'Vend ost, rødløg, persille, citronskal og hvidløg sammen.' },
+          { step: 'Fordel blandingen på filodejen og luk dejen omkring (se tip under opskriften).' },
+          { step: 'Vend filopakkerne i først æg og så rasp. frittér dem til de er gyldenbrune - ca. 3 min. i 170° varm olie.' },
+          { step: 'Drys med flagesalt og server straks med fx chimichurry.' },
+        ],
+      },
+    ],
   },
 
   {
@@ -368,10 +403,12 @@ const recipeData = [
     category: '/assets/breakfast_icon.svg',
     categoryAltText: 'breakfast ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/belgian-waffles.jpg',
     imageAltText: 'Belgiske vafler',
 
     title: 'Belgiske vafler',
+    description:
+      'Belgiske vafler er en rigtig dejlig hyggespise. Server hjemmelavede belgiske vafler efter en kølig gåtur, til weekendens morgenmad eller til brunch. Vaflerne er sprøde udenpå og bløde indeni. De karakteristiske dybe firkantede lommer i belgiske vafler hjælper med at holde fast på tilbehøret, og så er de meget dekorative. Børn og barnlige sjæle kan hygge sig med at anrette forskellige lækkerier i de enkelte lommer. Server belgiske vafler med fx vaniljeflødeis, marmelade, sukker, bær og chokoladecreme.',
     shortDescription:
       'Belgiske vafler er en rigtig dejlig hyggespise. Server hjemmelavede belgiske vafler efter en kølig gåtur, til weekendens morgenmad eller til brunch. Vaflerne er sprøde udenpå og bløde indeni.',
 
@@ -379,7 +416,35 @@ const recipeData = [
     person: '3',
     language: 'Belgiske',
 
-    page: 'opskrifter/belgiske-vafler.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Belgiske vafler',
+        list: [
+          { name: 'Æg', amount: '3', type: 'stk' },
+          { name: 'Sukker', amount: '150', type: 'g' },
+          { name: 'Hvedemel', amount: '350', type: 'g' },
+          { name: 'Vaniljesukker', amount: '1', type: 'tsk' },
+          { name: 'Bagepulver', amount: '3', type: 'tsk' },
+          { name: 'Groft salt', amount: '½', type: 'tsk' },
+          { name: 'Kærnemælk', amount: '5', type: 'dl' },
+          { name: 'Smeltet smør', amount: '200', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Belgiske vafler',
+        howTo: [
+          { step: 'Pisk æg og sukker lyst og luftigt.' },
+          { step: 'Bland mel, vaniljepulver, bagepulver og salt i en skål.' },
+          { step: 'Vend det i æggeblandingen skiftevis med kærnemælken.' },
+          { step: 'Vend til sidst smeltet smør i dejen og rør den ensartet.' },
+          { step: 'Varm vaffeljernet godt igennem.' },
+          { step: 'Fordel ca. ¾ dl dej i vaffeljernet og bag vaflen ca. 6 min. - til den er gylden og sprød. Bag resten af vaflerne.' },
+        ],
+      },
+    ],
   },
 
   {
@@ -389,17 +454,52 @@ const recipeData = [
     category: '/assets/dessert_icon.svg',
     categoryAltText: 'dessert ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/muffins-med-chokoladestykker.jpg',
     imageAltText: 'Muffins med chokoladestykker',
 
     title: 'Muffins med chokoladestykker',
+    description:
+      'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter. Chokolademuffins er en af de mest elskede af slagsen og her en lækker hjemmelavet muffin med chokoladestykker. Muffins med chokoladestykker er meget nem at lave og skøn at tage med på fx picnic. Disse skønne muffins med chokoladestykker er en favorit til både hverdag og fest.',
     shortDescription: 'Muffins er betegnelsen for en meget populær kage, som er bagt i en lille, rund portionsform - og der findes et utal af varianter.',
 
     time: '45',
     person: '4',
     language: 'Amerikansk',
 
-    page: 'opskrifter/muffins-med-chokoladestykker.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Muffins med chokoladestykker',
+        list: [
+          { name: 'Blødt smør', amount: '150', type: 'g' },
+          { name: 'Sukker', amount: '150', type: 'g' },
+          { name: 'Æg', amount: '2', type: 'stk' },
+          { name: 'Hvedemel', amount: '125', type: 'g' },
+          { name: 'Stødt kanel', amount: '½', type: 'tsk' },
+          { name: 'Bagepulver', amount: '2', type: 'tsk' },
+          { name: 'Mælk', amount: '2', type: 'dl' },
+          { name: 'Grofthakket mørk chokolade ca. 55%', amount: '100', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Dej til muffins',
+        howTo: [
+          { step: 'Pisk smør og sukker lyst og luftigt.' },
+          { step: 'Tilsæt et æg ad gangen og pisk godt mellem hvert.' },
+          {
+            step: 'Bland mel, kanel og bagepulver sammen og vend det (evt. drysset gennem en sigte) i æggeblandingen skiftevis med mælk - vend chokoladen i til sidst.',
+          },
+          { step: 'Fordel dejen i 12 smurte og meldryssede muffinsforme. Stil dem på en plade med bagepapir og bag dem midt i ovnen.' },
+          { step: 'Lad de bagte chokolademuffins køle lidt af i formene - på en bagerist.' },
+        ],
+      },
+      {
+        howToTitle: 'Bagetid',
+        howTo: [{ step: 'Ca. 16 min. ved 200°.' }],
+      },
+    ],
   },
 
   {
@@ -409,10 +509,12 @@ const recipeData = [
     category: '/assets/dinner_icon.svg',
     categoryAltText: 'dinner ikon',
 
-    image: '/assets/recipe-img/placeholder.jpg',
+    image: '/assets/recipe-img/spaghetti-carbonara.jpg',
     imageAltText: 'Spaghetti Carbonara',
 
     title: 'Spaghetti Carbonara',
+    description:
+      'Spaghetti Carbonara - næsten som at sidde på en italiensk restaurant. Vi foreslår en tomatsalat til Spaghetti Cabonara. Det ville de nok ikke gøre i Italien, de ville spise salaten bagefter, men ellers er den god nok. Spaghetti Carbonara er hele familiens livret og her er en klassisk af slagsen med lidt mindre fedt. Måske bliver denne udgave af Spaghetti Carbonara din nye yndlingsret? Hvis du foretrækker den klassiske italienske udgave af retten, så kig på tippet længere nede i opskriften.',
     shortDescription:
       'Spaghetti Carbonara - næsten som at sidde på en italiensk restaurant. Vi foreslår en tomatsalat til Spaghetti Cabonara. Det ville de nok ikke gøre i Italien, de ville spise salaten bagefter.',
 
@@ -420,7 +522,53 @@ const recipeData = [
     person: '4',
     language: 'Italiensk ',
 
-    page: 'opskrifter/spaghetti-carbonara.html',
+    ingredients: [
+      {
+        ingredientsTitle: 'Carbonara',
+        list: [
+          { name: 'Bacon i tynde skiver', amount: '125', type: 'g' },
+          { name: 'Madlavningsfløde 8%', amount: '¼', type: 'liter' },
+          { name: 'Groft salt', amount: '½', type: 'tsk' },
+          { name: 'Friskkværnet peber', amount: '½', type: 'tsk' },
+          { name: 'Æg', amount: '2', type: 'stk' },
+          { name: 'Pasta- & gratineringsost 30%', amount: '175', type: 'g' },
+        ],
+      },
+      {
+        ingredientsTitle: 'Tomatsalat',
+        list: [
+          { name: 'Tomater i skiver', amount: '550', type: 'g' },
+          { name: 'Lille salatløg i tynde ringe', amount: '1', type: 'stk' },
+          { name: 'Frisk oregano', amount: '2', type: 'spsk' },
+          { name: 'Groft salt', amount: '¾', type: 'tsk' },
+          { name: 'Friskkværnet peber', amount: '', type: '' },
+        ],
+      },
+      {
+        ingredientsTitle: 'Spaghetti',
+        list: [
+          { name: 'Vand', amount: '3', type: 'liter' },
+          { name: 'Groft salt', amount: '1', type: 'spsk' },
+          { name: 'Tørret hvid pasta fx spaghetti', amount: '400', type: 'g' },
+        ],
+      },
+    ],
+
+    howToList: [
+      {
+        howToTitle: 'Spaghetti Carbonara',
+        howTo: [
+          { step: 'Steg baconskiverne til de er gyldne og sprøde. Lad baconen dryppe af på et stykke køkkenrulle og del det i mindre stykker. Tør panden af.' },
+          { step: 'Kom fløde, salt og peber i panden og bring det i kog.' },
+          { step: 'Bland æggene og 75 g af osten sammen i en skål.' },
+          { step: 'Bring imens vand tilsat salt i kog i en stor gryde. Kog spaghettien 8-10 min. til den er mør uden at være blød.' },
+          {
+            step: 'Lad spaghettien dryppe af i et dørslag og kom den derefter tilbage i gryden. Vend først den varme fløde og dernæst bacon og ægge-osteblanding i spaghettien. Smag til.',
+          },
+          { step: 'Server carbonaraen straks sammen med resten af osten og evt. tomatsalat.' },
+        ],
+      },
+    ],
   },
 ];
 
