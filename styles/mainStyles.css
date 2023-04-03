@@ -250,15 +250,6 @@ nav {
   margin-top: 200px;
 }
 
-.search_input {
-  display: grid;
-  position: relative;
-  z-index: 10;
-  width: 86%;
-  max-width: 900px;
-  margin-top: 3vh;
-}
-
 .search_input input {
   z-index: 1;
   height: 50px;
@@ -307,8 +298,10 @@ input::placeholder {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   height: 50px;
+  top: 1vh;
+  z-index: 10;
 }
 
 .search_icon {
