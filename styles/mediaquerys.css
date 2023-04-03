@@ -19,10 +19,8 @@
     order: 0;
   }
 
-  .autocom_box {
-    position: sticky;
-    top: 18px;
-    z-index: 10;
+  .search_input {
+    width: 83%;
   }
 }
 
