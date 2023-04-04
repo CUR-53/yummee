@@ -1,20 +1,9 @@
-/* Suggestions js import */
-/* import suggestions from './suggestions.js';
-suggestions; */
-
-/* RecipeTmpl js import */
-/* import renderRecipe from './recipeTmpl.js';
-renderRecipe; */
-
 /* filter function */
 const categoryTitle = document.querySelectorAll('.category-title');
 const allCategoryPosts = document.querySelectorAll('.all');
 
 for (let i = 0; i < categoryTitle.length; i++) {
-  categoryTitle[i].addEventListener(
-    'click',
-    filterPosts.bind(this, categoryTitle[i])
-  );
+  categoryTitle[i].addEventListener('click', filterPosts.bind(this, categoryTitle[i]));
 }
 
 function filterPosts(item) {
