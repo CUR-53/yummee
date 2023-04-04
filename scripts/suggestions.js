@@ -12,14 +12,14 @@ searchInput.addEventListener('keyup', function (event) {
   autocomBox.innerHTML = '';
   suggestions.forEach(function (suggestedRecipe) {
     const suggestionLink = document.createElement('a');
-    suggestionLink.href = `opskrifter/template.html?id=${suggestedRecipe.id}`;
+    suggestionLink.href = `opskrift.html?id=${suggestedRecipe.id}`;
     suggestionLink.innerText = suggestedRecipe.title;
     autocomBox.appendChild(suggestionLink);
   });
 
   // Select the first suggestion when pressing enter
   if (event.keyCode === 13 && suggestions.length > 0) {
-    window.location.href = `opskrifter/template.html?id=${suggestions[0].id}`;
+    window.location.href = `opskrift.html?id=${suggestions[0].id}`;
   }
 });
 

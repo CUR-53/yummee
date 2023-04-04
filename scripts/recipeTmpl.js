@@ -10,7 +10,7 @@ const renderRecipe = (data) => {
 
     data.forEach((accord) => {
       recipes.innerHTML += `
-    <div class="all ${accord.type}" onclick="location.href='opskrifter/template.html?id=${accord.id}'">
+    <div class="all ${accord.type}" onclick="location.href='opskrift.html?id=${accord.id}'">
     
     <div class="recipe_img">
             <img src="${accord.image}" alt="${accord.imageAltText}" />
