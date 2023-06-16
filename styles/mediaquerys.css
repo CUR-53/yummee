@@ -73,6 +73,10 @@
 
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .howTo_list {
+    max-width: 700px;
+  }
 }
 
 /*  recipePage.html */
