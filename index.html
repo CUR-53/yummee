@@ -18,23 +18,26 @@
       <!-- Navigations menu -->
       <nav>
         <div class="nav_container">
-          <div class="logo" onclick="window.location.href = 'https://yummee.dk';">
-            <img src="assets/profile_icon.svg" alt="Your profil" />
-            <p><a href="https://yummee.dk"></a></p>
+          <div class="logo">
+            <img id="profil_click" src="assets/profile_icon.svg" alt="Your profil" />
+            <div class="profil_btns">
+              <button class="login_btn" onclick="window.location.href = 'https://yummee.dk';">Login</button>
+              <button class="opret_btn" onclick="window.location.href = 'https://yummee.dk';">Opret</button>
+            </div>
           </div>
           <!-- Home icon -->
           <div class="home_icon" onclick="location.href='#home';">
             <img src="assets/home_icon.svg" alt="Hjem icon" />
           </div>
           <!-- Burgermenu icon -->
-          <div class="burgermenu_icon">
+         <!--  <div class="burgermenu_icon">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-        </div>
+        </div> -->
         <!-- Burgermenu -->
-        <div class="burgermenu_container">
+       <!--  <div class="burgermenu_container">
           <ul class="list_styles">
             <li>
               <a href="index.html" alt="Hjem" class="nav_link darkBlue">Forside</a>
@@ -51,8 +54,8 @@
             <li>
               <a href="index.html" alt="Dessert" class="nav_link lightBlue">Dessert</a>
             </li>
-          </ul>
-        </div>
+          </ul> -->
+        </div> 
       </nav>
       <!--   Hero search section -->
       <section class="hero_section">

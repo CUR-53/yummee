@@ -83,7 +83,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1900px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
@@ -94,8 +94,8 @@ nav {
   align-items: center;
   justify-content: center;
   order: 1;
-
-  gap: 10px;
+  
+  gap: 15px;
   cursor: pointer;
 }
 
@@ -107,6 +107,46 @@ nav {
   color: var(--white-);
 
   letter-spacing: 0.5px;
+}
+
+/* Profil */
+#profil_click {
+  order: 1;
+  cursor: pointer;
+}
+
+/* Login - Opret */
+.profil_btns {
+  display: none;
+}
+
+.profil_btns.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login_btn,
+.opret_btn {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: transparent;
+
+  font-family: 'poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+
+  transition: 170ms ease;
+
+  cursor: pointer;
+}
+
+.login_btn:hover,
+.opret_btn:hover {
+  transform: scale(1.05);
 }
 
 /* Burgermenu */
@@ -246,17 +286,20 @@ nav {
 .search_container {
   display: flex;
   justify-content: center;
+
   width: 100%;
   margin-top: 200px;
 }
 
 .search_input input {
   z-index: 1;
+
   height: 50px;
   padding-left: 85px;
   padding-right: 20px;
   border: var(--darkBlue-) solid 0.5px;
   border-radius: 8px;
+
   font-family: 'poppins' sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
@@ -279,15 +322,18 @@ input::placeholder {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--lightGrey-);
+
   letter-spacing: 0.4px;
 }
 
 .search_icon {
   display: flex;
+
   position: absolute;
   left: 30px;
   top: 15px;
   z-index: 15;
+
   cursor: pointer;
 }
 
@@ -295,13 +341,15 @@ input::placeholder {
 .search_input {
   display: flex;
   align-items: center;
+
   position: relative;
-  margin: 0 auto;
+  top: 1vh;
+  z-index: 10;
+
   width: 100%;
   max-width: 800px;
   height: 50px;
-  top: 1vh;
-  z-index: 10;
+  margin: 0 auto;
 }
 
 .search_icon {
@@ -319,45 +367,54 @@ input[name='recipe_search'] {
   height: 100%;
   padding-left: 55px;
   border: none;
+  outline: none;
+
   font-size: 16px;
   font-weight: 600;
   color: var(--darkBlue-);
-  outline: none;
 }
 
 .autocom_box {
   position: absolute;
   top: 49px;
+  z-index: 1;
+
   width: 100%;
   max-height: 200px;
-  overflow-y: auto;
-  background-color: #fff;
   border: solid var(--darkBlue-) 0.5px;
   border-radius: 0px 0px 8px 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
   font-weight: 600;
   color: rgb(59, 59, 59);
-  z-index: 1;
+
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .autocom_box a {
   display: block;
+
   padding: 10px 15px;
-  cursor: pointer;
+  border-bottom: 0.5px solid rgba(0, 40, 73, 0.2);
+
   text-decoration: none;
   color: black;
-  border-bottom: 0.5px solid rgba(0, 40, 73, 0.2);
+
+  cursor: pointer;
 }
 
 .autocom_box a:hover {
   background-color: var(--lightGrey-);
+
   color: #fff;
 }
 
 .autocom_box a:focus {
-  background-color: var(--lightGrey-);
-  color: #fff;
   outline: none;
+  background-color: var(--lightGrey-);
+
+  color: #fff;
 }
 
 /* Fliter section */
@@ -377,7 +434,7 @@ input[name='recipe_search'] {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 60px);
 
-  max-width: 1366px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
 
@@ -434,6 +491,8 @@ input[name='recipe_search'] {
 /* recipe section grid */
 .recipe_grid_container {
   margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .recipe_box {
@@ -441,9 +500,8 @@ input[name='recipe_search'] {
   grid-template-columns: 1fr;
 
   top: 0;
-
+  margin: 0 30px;
   width: 100%;
-  margin: 0 auto;
 
   gap: 30px;
 }
