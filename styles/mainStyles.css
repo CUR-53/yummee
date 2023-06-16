@@ -83,7 +83,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1200px;
+  max-width: 1366px;
   height: 100%;
   margin: 0 auto;
 }
@@ -94,7 +94,7 @@ nav {
   align-items: center;
   justify-content: center;
   order: 1;
-  
+
   gap: 15px;
   cursor: pointer;
 }
@@ -206,7 +206,7 @@ nav {
 
 /* Burgermenu icon */
 .burgermenu_icon {
-  display: block;
+  display: none;
 
   z-index: 200;
 
@@ -434,7 +434,7 @@ input[name='recipe_search'] {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 60px);
 
-  max-width: 1200px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 50px 0;
 

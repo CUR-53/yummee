@@ -69,7 +69,7 @@
 @media screen and (min-width: 1150px) {
   .recipe_box {
     display: grid;
-    max-width: 1200px;
+    max-width: 1366px;
 
     grid-template-columns: repeat(3, 1fr);
   }
