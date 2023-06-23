@@ -30,14 +30,14 @@
             <img src="assets/home_icon.svg" alt="Hjem icon" />
           </div>
           <!-- Burgermenu icon -->
-         <!--  <div class="burgermenu_icon">
+          <!--  <div class="burgermenu_icon">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
         </div> -->
-        <!-- Burgermenu -->
-       <!--  <div class="burgermenu_container">
+          <!-- Burgermenu -->
+          <!--  <div class="burgermenu_container">
           <ul class="list_styles">
             <li>
               <a href="index.html" alt="Hjem" class="nav_link darkBlue">Forside</a>
@@ -55,7 +55,7 @@
               <a href="index.html" alt="Dessert" class="nav_link lightBlue">Dessert</a>
             </li>
           </ul> -->
-        </div> 
+        </div>
       </nav>
       <!--   Hero search section -->
       <section class="hero_section">
@@ -99,5 +99,20 @@
     <section class="recipe_grid_container">
       <div class="recipe_box"></div>
     </section>
+    <script>
+      window.addEventListener('scroll', function () {
+        const heroSection = document.querySelector('.hero_section');
+        const searchContainer = document.querySelector('.search_container');
+
+        let heroSectionHeight = heroSection.offsetHeight;
+        let scrollPosition = window.pageYOffset;
+
+        if (scrollPosition > heroSectionHeight - 80) {
+          searchContainer.classList.add('sticky');
+        } else {
+          searchContainer.classList.remove('sticky');
+        }
+      });
+    </script>
   </body>
 </html>
