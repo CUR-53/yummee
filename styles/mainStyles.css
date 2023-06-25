@@ -94,6 +94,7 @@ nav {
   align-items: center;
   justify-content: center;
   order: 1;
+  z-index: 999;
 
   gap: 15px;
   cursor: pointer;
