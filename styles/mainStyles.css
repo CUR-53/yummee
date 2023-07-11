@@ -7,14 +7,20 @@
 /* ===== BASE SITE CSS START ===== */
 :root {
   --white-: #fff;
+  --black-: #000;
+
+  --white-text-: #fff;
+  --black-text-: #000;
+
   --darkBlue-: #002337;
   --green-: #009660;
   --orange-: #e87b17;
   --red-: #c62f26;
-  --lightBlue: #1b86a2;
+  --lightBlue-: #1b86a2;
   --lightGrey-: #989898;
-  --header: #002337;
-  --btnBackground: #e4e4e4;
+
+  --header-: #002337;
+  --btnBackground-: #e4e4e4;
 }
 
 * {
@@ -33,7 +39,7 @@ html {
 
 /* 1.6rem = 16px */
 body {
-  background-color: var(--white);
+  background-color: var(--white-);
 
   font-family: 'poppins', sans-serif;
   font-size: 1.6rem;
@@ -58,7 +64,7 @@ body {
 }
 
 .lightBlue {
-  background-color: var(--lightBlue);
+  background-color: var(--lightBlue-);
 }
 
 /* Header */
@@ -105,7 +111,7 @@ nav {
 
   font-weight: 500;
   text-decoration: none;
-  color: var(--white-);
+  color: var(--white-text-);
 
   letter-spacing: 0.5px;
 }
@@ -138,7 +144,7 @@ nav {
   font-family: 'poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
-  color: black;
+  color: var(--black-text-);
 
   transition: 170ms ease;
 
@@ -169,7 +175,7 @@ nav {
 
   width: 100vw;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black-);
 }
 
 .list_styles li {
@@ -186,7 +192,7 @@ nav {
 
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--white-text-);
 }
 
 .list_styles li a:hover {
@@ -233,13 +239,13 @@ nav {
 }
 
 .burgermenu_icon.active .bar:nth-child(1) {
-  background-color: #fff;
+  background-color: var(--white-);
 
   transform: translateY(8px) rotate(45deg);
 }
 
 .burgermenu_icon.active .bar:nth-child(3) {
-  background-color: #fff;
+  background-color: var(--white-);
 
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -266,7 +272,7 @@ nav {
   font-size: clamp(5rem, 6vw, 8rem);
   font-weight: 800;
   text-align: center;
-  color: var(--white-);
+  color: var(--white-text-);
 
   letter-spacing: 2px;
 }
@@ -278,7 +284,7 @@ nav {
   font-size: clamp(1.3rem, 3vw, 2rem);
   font-weight: 400;
   text-align: center;
-  color: var(--white-);
+  color: var(--white-text-);
 
   letter-spacing: 1px;
 }
@@ -307,7 +313,7 @@ nav {
 }
 
 .search_input input:active {
-  border-color: #fff;
+  border-color: var(--white-);
 }
 
 .search_input input:focus {
@@ -384,7 +390,7 @@ input[name='recipe_search'] {
   max-height: 200px;
   border: solid var(--darkBlue-) 0.5px;
   border-radius: 0px 0px 8px 8px;
-  background-color: #fff;
+  background-color: var(--white-);
 
   font-weight: 600;
   color: rgb(59, 59, 59);
@@ -400,7 +406,7 @@ input[name='recipe_search'] {
   border-bottom: 0.5px solid rgba(0, 40, 73, 0.2);
 
   text-decoration: none;
-  color: black;
+  color: var(--black-text-);
 
   cursor: pointer;
 }
@@ -408,21 +414,21 @@ input[name='recipe_search'] {
 .autocom_box a:hover {
   background-color: var(--lightGrey-);
 
-  color: #fff;
+  color: var(--white-text-);
 }
 
 .autocom_box a:focus {
   outline: none;
   background-color: var(--lightGrey-);
 
-  color: #fff;
+  color: var(--white-text-);
 }
 
 /* Fliter section */
 .filter_container {
   width: 100%;
   margin: 0px auto 50px;
-  background-color: var(--btnBackground);
+  background-color: var(--btnBackground-);
 
   box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.1);
@@ -452,7 +458,7 @@ input[name='recipe_search'] {
   font-size: clamp(1.3rem, 2vw, 1.5rem);
   font-weight: 600;
   text-decoration: none;
-  color: #fff;
+  color: var(--white-text-);
 
   transition: 170ms ease;
 
@@ -557,27 +563,27 @@ input[name='recipe_search'] {
   height: max-content;
   height: 100%;
   border-radius: 0px 0px 8px 8px;
-  background-color: var(--header);
+  background-color: var(--darkBlue-);
 }
 
 .recipe_content > h2 {
   padding: 0px 15px 5px 15px;
 
   font-size: 2rem;
-  color: #fff;
+  color: var(--white-text-);
 }
 
 .recipe_content > p {
   padding: 5px 15px 20px 15px;
 
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--white-text-);
 }
 
 .recipe_content i {
   font-size: 1.3rem;
   font-style: normal;
-  color: #fff;
+  color: var(--white-text-);
 }
 
 .recipe_content_top {
