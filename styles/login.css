@@ -1,0 +1,68 @@
+@import './mainStyles.css';
+
+.login_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+  height: 90vh;
+
+  background-color: var(--btnBackground);
+
+  overflow: hidden;
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 7rem 7rem;
+  border-radius: 10px;
+  background-color: var(--header);
+}
+
+.login_container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: #fff;
+
+  gap: 3rem;
+}
+
+.login_container > form > input {
+  width: 100%;
+  height: 3rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+}
+
+.login_container > form > input:focus {
+  outline: transparent;
+}
+
+.login_container > form > p {
+  display: flex;
+}
+
+.login_container > form > button {
+  padding: 1rem 3rem;
+  border: transparent;
+  border-radius: 5px;
+  outline: transparent;
+}
+
+.login_container > form > a {
+  color: #fff;
+  font-size: 1.3rem;
+}

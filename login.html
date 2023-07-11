@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/mainStyles.css" />
+    <link rel="stylesheet" href="styles/mediaquerys.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/recipePage.css" />
+
+    <script src="scripts/suggestions.js" type="module"></script>
+    <script src="scripts/recipeTmpl.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
+    <title>Login - Yummee.dk</title>
+  </head>
+  <body>
+    <header class="recipe_header">
+      <!-- Navigations menu -->
+      <nav>
+        <div class="nav_container">
+          <div class="logo">
+            <img id="profil_click" src="assets/profile_icon.svg" alt="Your profil" />
+            <div class="profil_btns">
+              <button class="login_btn" onclick="window.location.href = 'https://yummee.dk';">Login</button>
+              <button class="opret_btn" onclick="window.location.href = 'https://yummee.dk';">Opret</button>
+            </div>
+          </div>
+          <!-- Home icon -->
+          <div class="home_icon" onclick="window.location.href = 'https://yummee.dk';">
+            <img src="assets/home_icon.svg" alt="Hjem icon" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="login_section">
+      <div class="login_container">
+        <form action="#">
+          <h1>Login</h1>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Login</button>
+          <p>Don't have an account</p>
+          <a href="register.php">Register here</a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
