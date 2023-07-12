@@ -55,7 +55,7 @@
   margin: 1.5rem 0;
   padding: 2rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   background-color: var(--btnBackground-);
 
   font-size: 1.6rem;
@@ -77,12 +77,17 @@
   margin-top: 1.5rem;
   padding: 1rem 4rem;
   border: transparent;
-  border-radius: 8px;
+  border-radius: 5px;
   outline: transparent;
   background-color: var(--darkBlue-);
-
+  transition: 170ms ease;
   font-weight: bold;
   color: var(--white-text-);
+}
+
+.login_container > form > button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .login_container > form > a {

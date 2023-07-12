@@ -11,7 +11,7 @@
     <script src="scripts/suggestions.js" type="module"></script>
     <script src="scripts/recipeTmpl.js" type="module"></script>
     <script src="scripts/index.js" type="module"></script>
-    <title>Login | Yummee.dk</title>
+    <title>Login | Yummee</title>
   </head>
   <body>
     <header class="recipe_header">
@@ -21,12 +21,12 @@
           <div class="logo">
             <img id="profil_click" src="assets/profile_icon.svg" alt="Your profil" />
             <div class="profil_btns">
-              <button class="login_btn" onclick="window.location.href = 'https://yummee.dk/login';">Login</button>
-              <button class="opret_btn" onclick="window.location.href = 'https://yummee.dk';">Opret</button>
+              <a class="login_btn" href="login.html">Login</a>
+              <a class="opret_btn" href="opret.html">Opret</a>
             </div>
           </div>
           <!-- Home icon -->
-          <div class="home_icon" onclick="window.location.href = 'https://yummee.dk';">
+          <div class="home_icon" onclick="window.location.href = 'index.html';">
             <img src="assets/home_icon.svg" alt="Hjem icon" />
           </div>
         </div>
@@ -36,11 +36,11 @@
       <div class="login_container">
         <form action="#">
           <h1>Login</h1>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="Brugernavn" required />
+          <input type="password" placeholder="Adgangskode" required />
           <button type="submit">Login</button>
-          <p>Don't have an account</p>
-          <a href="register.php">Register here</a>
+          <p>Har du ikke en bruger?</p>
+          <a href="register.php">Opret dig her</a>
         </form>
       </div>
     </section>

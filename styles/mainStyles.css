@@ -106,7 +106,7 @@ nav {
   cursor: pointer;
 }
 
-.logo a {
+.logo > a {
   display: flex;
 
   font-weight: 500;
@@ -144,6 +144,8 @@ nav {
   font-family: 'poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
+  background-color: var(--white-);
+  text-decoration: none;
   color: var(--black-text-);
 
   transition: 170ms ease;
