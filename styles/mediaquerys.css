@@ -23,6 +23,19 @@
   nav {
     padding: 30px 40px;
   }
+
+  /* register form */
+  .register_container {
+    margin-top: 0;
+  }
+
+  .register_container > form {
+    margin-bottom: 0;
+  }
+
+  #checkbox_id {
+    margin-top: -0.3rem;
+  }
 }
 
 @media screen and (min-width: 750px) {

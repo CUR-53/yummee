@@ -11,7 +11,7 @@
     <script src="scripts/suggestions.js" type="module"></script>
     <script src="scripts/recipeTmpl.js" type="module"></script>
     <script src="scripts/index.js" type="module"></script>
-    <title>Login | Yummee</title>
+    <title>Opret | Yummee</title>
   </head>
   <body>
     <header class="recipe_header">
@@ -22,7 +22,7 @@
             <img id="profil_click" src="assets/profile_icon.svg" alt="Your profil" />
             <div class="profil_btns">
               <a class="login_btn" href="login.html">Login</a>
-              <a class="opret_btn" href="register.html">Opret</a>
+              <a class="opret_btn" href="opret.html">Opret</a>
             </div>
           </div>
           <!-- Home icon -->
@@ -32,15 +32,25 @@
         </div>
       </nav>
     </header>
-    <section class="login_section">
-      <div class="login_container">
+    <section class="register_section">
+      <div class="register_container">
         <form action="#">
-          <h1>Login</h1>
+          <h1>Opret</h1>
           <input type="text" placeholder="Brugernavn" required />
-          <input type="password" placeholder="Adgangskode" required />
-          <button type="submit">Login</button>
-          <p>Har du ikke en bruger?</p>
-          <a href="register.html">Opret dig her</a>
+          <input type="mail" placeholder="E-mail" required />
+          <input type="password" id="password" placeholder="Adgangskode" required />
+          <input type="password" id="password-match" placeholder="Gentag adgangskode" required />
+
+          <div class="checkbox_container">
+            <input type="checkbox" name="checkbox" id="checkbox_id" required />
+            <label for="checkbox_id"
+              >Oprettelse af en konto betyder, at du er okay med vores <a href="">servicevilkår</a>, <a href="">privatlivspolitik</a></label
+            >
+          </div>
+
+          <button type="submit">Opret</button>
+          <p>Har du allerade en bruger?</p>
+          <a href="login.html">Login ind her</a>
         </form>
       </div>
     </section>
