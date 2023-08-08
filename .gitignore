@@ -7,7 +7,6 @@
 
 # Project #
 ###################
-node_modules
 dist
 upload
 deploy.log
@@ -15,7 +14,7 @@ package-lock.json
 config.yml
 _styles
 shopify.theme.toml
-/node_modules
+node_modules
 
 # Compiled source #
 ###################
@@ -64,9 +63,8 @@ secrets.json
 .jekyll-metadata
 .ruby-version
 /package-lock.json
-node_modules
 desktop.ini
 assets/recipe-img/yumme - images.psd
 
-/example-app
-/phpmyadmin
+example-app
+phpmyadmin
