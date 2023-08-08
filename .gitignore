@@ -67,3 +67,6 @@ secrets.json
 node_modules
 desktop.ini
 assets/recipe-img/yumme - images.psd
+
+/example-app
+/phpmyadmin
