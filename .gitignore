@@ -65,3 +65,6 @@ secrets.json
 /package-lock.json
 desktop.ini
 assets/recipe-img/yumme - images.psd
+
+example-app
+phpmyadmin
