@@ -10,9 +10,9 @@ const renderRecipe = (data) => {
 
     data.forEach((accord) => {
       recipes.innerHTML += `
-    <div class="all ${accord.type}" onclick="location.href='opskrift.html?id=${accord.id}'">
+      <div class="all ${accord.type}" onclick="location.href='opskrift.html?id=${accord.id}'">
     
-    <div class="recipe_img">
+          <div class="recipe_img">
             <img src="${accord.image}" alt="${accord.imageAltText}" />
             <span class="category_name"
               ><img src="${accord.category}" alt="${accord.categoryAltText}"
@@ -50,7 +50,6 @@ const renderRecipe = (data) => {
               ${accord.shortDescription}
             </p>
           </div>
-        </div>
         </div>`;
     });
   }
