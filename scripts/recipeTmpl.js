@@ -21,9 +21,7 @@ const renderRecipe = (data) => {
 
           <div class="recipe_content">
             <div class="recipe_content_top">
-              <span
-                ><i
-                  ><img
+              <span><i><img
                     src="/assets/clock_icon_white.svg"
                     alt="tid ikon"
                   />${accord.time}min</i
